@@ -7,14 +7,14 @@ module.exports = {
     extend: {
       colors: {
         primary: '#3dcfb6',
-        secondary: '#08463B',
+        secondary: '#1C1C1C',
       },
       fontFamily: {
         karla: ['Karla', 'sans-serif'], // Hier wird die Karla-Schriftart eingebunden
         fira: ['fira', 'sans-serif']
       },
       backgroundImage: {
-        'hero': "url('/assets/imgs/header-bg.svg')"
+        'hero': "url('/assets/imgs/header-bg.svg')",
       },
       keyframes: {
         marquee: {
