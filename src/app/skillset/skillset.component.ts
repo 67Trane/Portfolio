@@ -27,7 +27,7 @@ export class SkillsetComponent {
       "file": "Firebase.svg"
     },
     {
-      "name": "Framework",
+      "name": "Material Design",
       "file": "Frame.svg"
     },
     {

@@ -2,37 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "fira"; /* Name der Schriftart, den du verwenden möchtest */
+  src: url("/assets/fonts/fira_code/FiraCode-VariableFont_wght.ttf")
+    format("truetype"); /* Stelle sicher, dass der Pfad zur .ttf-Datei korrekt ist */
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'fira'; /* Name der Schriftart, den du verwenden möchtest */
-    src: url('/assets/fonts/fira_code/FiraCode-VariableFont_wght.ttf') format('truetype'); /* Stelle sicher, dass der Pfad zur .ttf-Datei korrekt ist */
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "Karla";
+  src: url("/assets/fonts/karla/Karla-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Variable weight range von 100 bis 900 */
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'Karla';
-    src: url('/assets/fonts/karla/Karla-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900; /* Variable weight range von 100 bis 900 */
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Karla';
-    src: url('/assets/fonts/karla/Karla-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900; /* Variable weight range von 100 bis 900 */
-    font-style: italic;
-  }
-
+@font-face {
+  font-family: "Karla";
+  src: url("/assets/fonts/karla/Karla-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* Variable weight range von 100 bis 900 */
+  font-style: italic;
+}
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Karla;
-    padding: 0;
-    scroll-behavior: smooth;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Karla;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 a {
   font-size: large;
 }
+
+

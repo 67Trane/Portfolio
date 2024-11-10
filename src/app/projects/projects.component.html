@@ -1,0 +1,18 @@
+<section class="p-6">
+    <h2 class="text-2xl text-primary">Portfolio</h2>
+    <h1 class="text-6xl font-bold text-primary font-fira">Featured Projects</h1>
+    <p class="pt-4 pb-4">Explore a selection of my work here - interact with projects to see my skills ins action.</p>
+
+    <div *ngFor="let project of projects; let isLast = last" [ngClass]="{'border-b-2': isLast}"
+        class="border-t-2 border-primary pb-4 pt-4">
+
+        <h2 class="text-3xl font-fira font-bold">{{ project.name }}</h2>
+        <div class="flex gap-4">
+            <div *ngFor="let tool of project.tools" class="flex gap-3 justify-center items-center text-center">
+                <p class="pt-1">{{ tool }}</p>
+                <div class="bg-primary w-[1px] h-1/2"></div>
+            </div>
+        </div>
+    </div>
+
+</section>
