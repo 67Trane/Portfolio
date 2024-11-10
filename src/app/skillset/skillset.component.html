@@ -16,13 +16,15 @@
 
         <button class="rounded-full border-white border p-4 px-7">Let's Talk</button>
     </div>
+
+
     <div class="flex w-full flex-wrap gap-14 items-center justify-center p-6 pb-14">
         <div *ngFor="let icon of iconFiles" class="flex flex-col items-center size-16 gap-2">
             @defer (on viewport) {
-            <img class="size-32" [src]="iconFolderPath + icon.file" [alt]="icon">
+            <img class="size-16" [src]="iconFolderPath + icon.file" [alt]="icon">
             <p>{{icon.name}}</p>
             } @placeholder {
-            <div class="">Lade Icon...</div>
+            <div>Icon loading...</div>
             }
         </div>
     </div>
