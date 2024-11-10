@@ -10,7 +10,7 @@ module.exports = {
         secondary: '#1C1C1C',
       },
       fontFamily: {
-        karla: ['Karla', 'sans-serif'], // Hier wird die Karla-Schriftart eingebunden
+        karla: ['Karla', 'sans-serif'],
         fira: ['fira', 'sans-serif']
       },
       backgroundImage: {

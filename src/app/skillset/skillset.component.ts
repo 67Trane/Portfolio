@@ -51,9 +51,14 @@ export class SkillsetComponent {
       "file": "typescript.svg"
     },
     {
+      "name": "Python",
+      "file": "python.svg"
+    },
+    {
       "name": "Growth Mindset",
       "file": "growthmindset.svg"
-    }
+    },
+
   ]
 
 
