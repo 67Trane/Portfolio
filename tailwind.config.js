@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero': "url('/assets/imgs/header-bg.svg')",
+        'skillset': "url('/assets/imgs/skillset-bg.svg')"
       },
       keyframes: {
         marquee: {
