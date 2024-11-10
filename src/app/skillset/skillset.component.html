@@ -21,7 +21,7 @@
     <div class="flex w-full flex-wrap gap-14 items-center justify-center p-6 pb-14">
         <div *ngFor="let icon of iconFiles" class="flex flex-col items-center size-16 gap-2">
             @defer (on viewport) {
-            <img class="size-16" [src]="iconFolderPath + icon.file" [alt]="icon">
+            <img class="size-16" [src]="iconFolderPath + icon.file" [alt]="icon.name">
             <p>{{icon.name}}</p>
             } @placeholder {
             <div>Icon loading...</div>
