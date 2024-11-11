@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+
+  isModalOpen: boolean = false;
+
   projects= [
     {
       "name": "Join",
@@ -23,4 +26,12 @@ export class ProjectsComponent {
       "tools": ["Angular", "Firebase", "TypeScript"]
     },
   ]
+
+  toggleModal() {
+    this.isModalOpen = !this.isModalOpen;
+  }
+
+  
+
+  
 }
