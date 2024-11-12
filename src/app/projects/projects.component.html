@@ -4,7 +4,7 @@
     <p class="pt-4 pb-4">Explore a selection of my work here - interact with projects to see my skills ins action.</p>
 
     <div *ngFor="let project of projects; let isLast = last" [ngClass]="{'border-b-2': isLast}"
-        class="border-t-2 border-primary pb-4 pt-4">
+        class="border-t-2 border-primary pb-4 pt-4 md:flex md:justify-between">
 
         <h2 class="text-3xl font-fira font-bold" (click)="toggleModal()">{{ project.name }}</h2>
         <div class="flex gap-4">
@@ -14,5 +14,7 @@
             </div>
         </div>
     </div>
+
+    <app-project-card></app-project-card>
 
 </section>
