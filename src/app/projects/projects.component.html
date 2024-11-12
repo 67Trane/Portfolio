@@ -7,7 +7,7 @@
         class="border-t-2 border-primary pb-4 pt-4 md:flex md:justify-between">
 
         <h2 class="text-3xl font-fira font-bold" (click)="toggleModal()">{{ project.name }}</h2>
-        <div class="flex gap-4">
+        <div class="flex gap-4 md:w-1/3">
             <div *ngFor="let tool of project.tools; let isLast = last"  class="flex gap-3 justify-center items-center text-center">
                 <p class="pt-1">{{ tool }}</p>
                 <div *ngIf="!isLast" class="bg-primary w-px h-1/2"></div>
@@ -15,6 +15,6 @@
         </div>
     </div>
 
-    <app-project-card></app-project-card>
+    <app-project-card class="hidden"></app-project-card>
 
 </section>
