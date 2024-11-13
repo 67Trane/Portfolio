@@ -14,8 +14,7 @@ import { FooterComponent } from "./footer/footer.component";
   imports: [HeaderComponent, AboutMeComponent, SkillsetComponent, ProjectsComponent, TestimonialComponent, ContactComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  template: `<p>{{ title() }}</p>`
 })
 export class AppComponent {
-  title = input<string>();
+
 }
