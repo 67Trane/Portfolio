@@ -12,19 +12,24 @@ import { ProjectCardComponent } from "./project-card/project-card.component";
 export class ProjectsComponent {
 
   isModalOpen: boolean = false;
+  hoveredIndex: number | null = null;
+  test: any = 1
 
-  projects= [
+  projects = [
     {
       "name": "Join",
-      "tools": ["HTML", "CSS", "Javascript", "Firebase"]
+      "tools": ["HTML", "CSS", "Javascript", "Firebase"],
+      "picture": "assets/imgs/join.jpeg"
     },
     {
       "name": "NightStalker",
-      "tools": ["HTML", "CSS", "Javascript"]
+      "tools": ["HTML", "CSS", "Javascript"],
+      "picture": "assets/imgs/nightstalker.png"
     },
     {
       "name": "DA Bubble",
-      "tools": ["Angular", "Firebase", "TypeScript"]
+      "tools": ["Angular", "Firebase", "TypeScript"],
+      "picture": "assets/imgs/da-bubble.jpeg"
     },
   ]
 
@@ -32,7 +37,15 @@ export class ProjectsComponent {
     this.isModalOpen = !this.isModalOpen;
   }
 
-  
 
-  
+  onMouseOver(index: number) {
+    this.test = index
+    this.hoveredIndex = index;
+  }
+
+  onMouseLeave() {
+    this.hoveredIndex = null;
+  }
+
+
 }
