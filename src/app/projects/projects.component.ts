@@ -13,7 +13,7 @@ export class ProjectsComponent {
 
   isModalOpen: boolean = false;
   hoveredIndex: number | null = null;
-  test: any = 1
+  picIndex: any = 1
 
   projects = [
     {
@@ -39,7 +39,7 @@ export class ProjectsComponent {
 
 
   onMouseOver(index: number) {
-    this.test = index
+    this.picIndex = index
     this.hoveredIndex = index;
   }
 
