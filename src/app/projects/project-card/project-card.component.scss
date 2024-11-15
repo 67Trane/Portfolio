@@ -1,0 +1,15 @@
+@media (min-width:768px) {
+    section {
+        flex-direction: row;
+        align-items: center;
+        top: 7rem;
+        left: 7rem;
+        right: 7rem;
+        bottom: 7rem;
+    }
+}
+
+.hover\:text-primary:hover path {
+    stroke: var(--tw-primary);
+  }
+  

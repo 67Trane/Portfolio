@@ -25,10 +25,15 @@
         </div>
 
         <div class="flex justify-center items-center gap-6 pt-6 pb-6">
-            <input type="checkbox"
-                class="custom-checkbox h-5 w-5 appearance-none border-2 checked:bg-primary border-primary bg-transparent accent-primary  cursor-pointer">
-            <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined</p>
+            <div class="hover:bg-primary-opacity rounded-full size-8 flex justify-center items-center">
+                <input type="checkbox"
+                    class="custom-checkbox h-6 w-6 appearance-none rounded-sm border-2 border-primary bg-transparent cursor-pointer  checked:border-primary checked:before:content-['✓'] checked:before:text-primary checked:before:flex checked:before:justify-center checked:before:items-center">
+            </div>
+            <p class="w-2/3">
+                I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined
+            </p>
         </div>
+
 
         <div class="flex justify-center w-full">
             <button class="rounded-full border-white border p-4 text-xl ">Say Hello ;)</button>

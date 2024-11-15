@@ -1,8 +1,14 @@
 <section
-    class="fixed flex md:flex-row md:items-center flex-col top-5 left-5 right-5 bottom-5 h-vh rounded-xl bg-blue-500 z-50">
-    <div class="absolute top-0 right-0 flex self-end p-6 ">
-        <h1>X</h1>
+    class="fixed flex flex-col top-5 left-5 right-5 bottom-5 h-vh rounded-3xl bg-hero bg-cover bg-no-repeat z-50 border-primary border" *ngIf="isModalOpen">
+    <div class="absolute top-0 right-0 flex self-end p-6">
+
+        <svg (click)="toggleModal()" class="size-12 m-6 cursor-pointer hover:text-primary hover:scale-150 origin-center transition-transform duration-300"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 18L18 6M6 6l12 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
     </div>
+
 
 
     <div class="absolute bottom-0 p-6 flex justify-end w-full">
@@ -26,7 +32,7 @@
 
         <div class="flex gap-4 pb-6">
             <div class="flex justify-center items-center">
-                <img class="size-6"  src="assets/icons/skillset-icons/css.svg" alt="">
+                <img class="size-6" src="assets/icons/skillset-icons/css.svg" alt="">
                 <span>CSS</span>
             </div>
 
