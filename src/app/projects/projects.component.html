@@ -19,9 +19,9 @@
                     <p class="pt-1">{{ tool }}</p>
                     <div *ngIf="!isLast" class="bg-primary w-px h-1/2"></div>
                 </div>
-            </div>
+            </div>  
         </div>
-        <app-project-card *ngIf="isOpenPorject" [isModalOpen]="isOpenPorject" (isModalOpenChange)="handleModalChange($event)"></app-project-card>
+        <app-project-card *ngIf="isOpenPorject" [projectIndex]="picIndex" [projects]="projects"  [isModalOpen]="isOpenPorject" (isModalOpenChange)="handleModalChange($event)"></app-project-card>
     </div>
 
 

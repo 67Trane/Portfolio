@@ -1,5 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SkillsetService } from '../services/skillset.service';
+
+export interface IconFile {
+  name: string;
+  file: string;
+}
 
 @Component({
   selector: 'app-skillset',
@@ -9,59 +15,14 @@ import { Component } from '@angular/core';
   styleUrl: './skillset.component.scss'
 })
 export class SkillsetComponent {
-  iconFiles = [
-    {
-      "name": "Angular",
-      "file": "Angular.svg"
-    },
-    {
-      "name": "API",
-      "file": "Api.svg"
-    },
-    {
-      "name": "CSS",
-      "file": "css.svg"
-    },
-    {
-      "name": "Firebase",
-      "file": "Firebase.svg"
-    },
-    {
-      "name": "Material Design",
-      "file": "Frame.svg"
-    },
-    {
-      "name": "Git",
-      "file": "git.svg"
-    },
-    {
-      "name": "HTML",
-      "file": "html.svg"
-    },
-    {
-      "name": "JavaScript",
-      "file": "Javascript.svg"
-    },
-    {
-      "name": "Scrum",
-      "file": "scrum.svg"
-    },
-    {
-      "name": "TypeScript",
-      "file": "typescript.svg"
-    },
-    {
-      "name": "Python",
-      "file": "python.svg"
-    },
-    {
-      "name": "Growth Mindset",
-      "file": "growthmindset.svg"
-    },
+  iconFiles: IconFile[] = []
+  iconFolderPath = '';
 
-  ]
+  constructor(private skillsetService: SkillsetService) {
+    // Daten aus dem Service abrufen
+    this.iconFiles = this.skillsetService.getIconFiles();
+    this.iconFolderPath = this.skillsetService.getIconFolderPath();
+  }
 
-
-  iconFolderPath = '/assets/icons/skillset-icons/'
 
 }

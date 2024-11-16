@@ -20,17 +20,20 @@ export class ProjectsComponent implements OnInit {
     {
       "name": "Join (Kanban Board)",
       "tools": ["HTML", "CSS", "Javascript", "Firebase"],
-      "picture": "assets/imgs/join.jpeg"
+      "picture": "assets/imgs/join.jpeg",
+      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     },
     {
       "name": "NightStalker (Game)",
       "tools": ["HTML", "CSS", "Javascript"],
-      "picture": "assets/imgs/nightstalker.png"
+      "picture": "assets/imgs/nightstalker.png",
+      "description": "Jump, run and throw game based on object-oriented approach. Help NightStalker to find coins and molotoves to fight against the gaint skull",
     },
     {
       "name": "DA Bubble (Buessniss App)",
       "tools": ["Angular", "Firebase", "TypeScript"],
-      "picture": "assets/imgs/da-bubble.jpeg"
+      "picture": "assets/imgs/da-bubble.jpeg",
+      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
     },
   ]
 
@@ -38,8 +41,6 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.onMobile(); // Beim Initialisieren prüfen
   }
-
-
 
   onMouseOver(index: number) {
     this.picIndex = index
@@ -54,9 +55,9 @@ export class ProjectsComponent implements OnInit {
     this.ismobile = window.innerWidth < 768;
   }
 
-  @HostListener('window:resize') 
+  @HostListener('window:resize')
   onResize() {
-    this.onMobile(); 
+    this.onMobile();
   }
 
   openProject() {
