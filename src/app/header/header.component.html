@@ -2,14 +2,25 @@
     class="bg-hero bg-cover bg-center bg-no-repeat w-full h-dvh flex justify-center items-center text-center flex-col gap-7">
     <div class="absolute top-0 flex justify-between w-full items-center p-5">
 
-        <div class="flex md:order-2">
-            <div class="flex text-5xl w-19 justify-center  text-primary">
+        <div *ngIf="!hovered" (mouseover)="hoverOn()" class="flex md:order-2 cursor-pointer">
+            <div class="flex text-5xl w-19 justify-center font-bold text-primary">
                 <h2 class="">M</h2>
                 <h2 class="-ml-3">D</h2>
             </div>
             <div class="hidden md:flex flex-col text-start font-bold text-xl">
                 <h2>Mehmet</h2>
                 <h2 class="-mt-2">Deliaci</h2>
+            </div>
+        </div>
+
+        <div *ngIf="hovered" class="flex md:order-2 cursor-pointer" (mouseleave)="hoverOff()">
+            <div class="flex text-5xl w-19 justify-center text-primary">
+                <h2 class="font-bold outline-logo">M</h2>
+                <h2 class="-ml-2 font-bold outline-logo">D</h2>
+            </div>
+            <div class="hidden md:flex flex-col text-start font-bold text-xl ">
+                <h2 class="outline">Mehmet</h2>
+                <h2 class="-mt-2 outline">Deliaci</h2>
             </div>
         </div>
 
@@ -43,8 +54,8 @@
         <h2 class="font-fira text-2xl md:text-4xl">Frontend Developer</h2>
         <h1 class="text-5xl md:text-8xl font-bold ">Mehmet Deliaci</h1>
         <div class=" flex w-full justify-center gap-8">
-            <button class="rounded-full border-white border p-4 ">Check my work</button>
-            <button class="rounded-full border-white border p-4 ">Contact me</button>
+            <a href="#projects" class="rounded-full border-white border p-4 z-10">Check my work</a>
+            <a href="#contact" class="rounded-full border-white border p-4 z-10">Contact me</a>
         </div>
     </div>
 

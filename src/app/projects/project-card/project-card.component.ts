@@ -36,19 +36,21 @@ export class ProjectCardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.findMatchingIcons()
+  }
+
+  findMatchingIcons(){
     this.matchingIcons = this.projects[this.projectIndex].tools.map((tool: any) =>
       this.iconFiles.find((icon) => icon.name.toLowerCase() === tool.toLowerCase())
     );
-
   }
-
 
   nextProject() {
     this.projectIndex = (this.projectIndex + 1) % this.projects.length;
+    this.findMatchingIcons()
   }
 
-
-  navigateToGame() {
+  navigateToProject() {
     let projectname = this.projects[this.projectIndex].name.toLowerCase().split("(")
     window.open(`https://mehmet-deliaci.net/${projectname[0]}`, '_self');
   }
