@@ -24,7 +24,7 @@
 
 
 
-    <div class="flex w-full flex-wrap gap-14 items-center justify-center p-6 pb-14 md:gap-20 relative">
+    <div class="flex w-full flex-wrap gap-14 items-center justify-center p-6 pb-14 md:gap-20 relative overflow-hidden">
         <div *ngFor="let icon of iconFiles; let isLast = last"
             class="flex flex-col items-center size-16 gap-2 cursor-pointer" (mouseover)="hoverPopUp(icon.name)"
             (mouseleave)="closePopUp()">
