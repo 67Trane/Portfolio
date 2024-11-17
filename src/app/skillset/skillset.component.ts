@@ -22,7 +22,6 @@ export class SkillsetComponent {
 
 
   constructor(private skillsetService: SkillsetService) {
-    // Daten aus dem Service abrufen
     this.iconFiles = this.skillsetService.getIconFiles();
     this.iconFolderPath = this.skillsetService.getIconFolderPath();
   }

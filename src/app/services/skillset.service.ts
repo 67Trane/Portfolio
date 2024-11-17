@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root', // Service wird global verfügbar gemacht
+  providedIn: 'root',
 })
 export class SkillsetService {
   iconFiles = [
@@ -16,16 +16,16 @@ export class SkillsetService {
     { name: "Scrum", file: "scrum.svg" },
     { name: "TypeScript", file: "typescript.svg" },
     { name: "Python", file: "python.svg" },
-    { name: "Growth Mindset", file: "growthmindset.svg" },
+    { name: "Growth Mindset", file: "growthmindset.svg" }, // Caution! Growth has to be the last one
   ];
 
   iconFolderPath = '/assets/icons/skillset-icons/';
 
   getIconFiles() {
-    return this.iconFiles; // Gibt die Dateien zurück
+    return this.iconFiles;
   }
 
   getIconFolderPath() {
-    return this.iconFolderPath; // Gibt den Pfad zurück
+    return this.iconFolderPath;
   }
 }
