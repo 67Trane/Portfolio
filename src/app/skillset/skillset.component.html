@@ -21,11 +21,15 @@
         </div>
     </div>
 
+    
 
-    <div class="flex w-full flex-wrap gap-14 items-center justify-center p-6 pb-14 md:gap-20">
-        <div *ngFor="let icon of iconFiles" class="flex flex-col items-center size-16 gap-2 cursor-pointer ">
+
+    <div class="flex w-full flex-wrap gap-14 items-center justify-center p-6 pb-14 md:gap-20 relative">
+        <div *ngFor="let icon of iconFiles; let isLast = last" class="flex flex-col items-center size-16 gap-2 cursor-pointer" (mouseover)="hoverPopUp(icon.name)" (mouseleave)="closePopUp()">
+            <app-popup *ngIf="isLast && isHovered"  class="flex -translate-y-52 absolute"></app-popup>
             @defer (on viewport) {
-            <img class="size-16 hover:scale-110 transition-all ease-in duration-100" [src]="iconFolderPath + icon.file" [alt]="icon.name">
+            <img class="size-16 hover:scale-110 transition-all ease-in duration-100" [src]="iconFolderPath + icon.file"
+                [alt]="icon.name">
             <p class="font-fira">{{icon.name}}</p>
             } @placeholder {
             <div>Icon loading...</div>
