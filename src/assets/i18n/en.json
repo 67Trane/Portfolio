@@ -1,4 +1,50 @@
 {
-  "PROJECTS": "Check my work",
-  "CONTACT": "Contact me"
+  "HEADER": {
+    "PROJECTS": "My Projects",
+    "CONTACT": "Contact Me",
+    "TITLE": "Frontend Developer",
+    "ABOUT": "About Me",
+    "SKILLS": "Skills",
+    "PROJECT": "Projects",
+    "LOCATION": "Based in Nuremberg",
+    "REMOTE": "Available for Remote Work"
+  },
+  "ABOUTME": {
+    "WHO": "Who I Am",
+    "ME": "About me",
+    "TITLE": "Hi, I am a German-Turkish frontend developer near Nuremberg with a passion for IT and creative design.",
+    "FLEX": "I am flexible and happy to work both in the office and remotely.",
+    "MIND": "I am open to new experiences and excited to take on challenging opportunities.",
+    "CHECK": "For me, programming is not just about writing lines of code but about creating innovative solutions that inspire.",
+    "FOCUS": "I value clean code, user-focused designs, and efficient implementation."
+  },
+  "SKILLSET": {
+    "TITLE": "Technologies",
+    "HEADER": "Skill Set",
+    "INFO": "Throughout my journey, I have worked on diverse projects, utilizing a wide range of frontend technologies and concepts. I am always eager to embrace new tools and methodologies, continuously improving my skills to stay ahead in the ever-evolving world of web development.",
+    "SECONDTITLEPT1": "Do you need",
+    "SECONDTITLEPT2": "another skill?",
+    "MORE": "Feel free to reach out. I’m always excited to broaden my expertise and take on new challenges.",
+    "TALK": "Let’s Talk",
+    "GROWTH": "Growth Mindset"
+  },
+  "POPUP": {
+    "INFO": "I have a special interest in learning."
+  },
+  "PROJECTS": {
+    "HEADER": "Featured Projects",
+    "INFO": "Explore a selection of my work here — interact with projects to see my skills in action."
+  },
+  "PROJECTCARD": {
+    "TITLE": "What is this project about?",
+    "JOIN": {
+      "INFO": "A task manager inspired by the Kanban System. Create and organize tasks using drag-and-drop functionality, and assign users and categories."
+    },
+    "NIGHTSTALKER": {
+      "INFO": "A jump, run, and throw game based on an object-oriented approach. Help NightStalker find coins and Molotov cocktails to fight against the giant Skull Warrior."
+    },
+    "DABUBBLE": {
+      "INFO": "This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    }
+  }
 }

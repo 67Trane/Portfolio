@@ -1,4 +1,50 @@
 {
-  "PROJECTS": "Meine Projekte",
-  "CONTACT": "Kontaktieren sie mich"
+  "HEADER": {
+    "PROJECTS": "Meine Projekte",
+    "CONTACT": "Kontaktieren Sie mich",
+    "TITLE": "Frontend-Entwickler",
+    "ABOUT": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PROJECT": "Projekte",
+    "LOCATION": "In Nürnberg",
+    "REMOTE": "Verfügbar für Remote-Arbeit"
+  },
+  "ABOUTME": {
+    "WHO": "Wer ich bin",
+    "ME": "Über mich",
+    "TITLE": "Hi, ich bin ein deutsch-türkischer Frontend-Entwickler aus der Nähe von Nürnberg mit einer Leidenschaft für IT und kreatives Design.",
+    "FLEX": "Ich bin flexibel und arbeite gerne sowohl im Büro als auch im Homeoffice.",
+    "MIND": "Ich bin offen für neue Erfahrungen und freue mich darauf, spannende Herausforderungen anzunehmen.",
+    "CHECK": "Für mich bedeutet Programmieren nicht nur Code zu schreiben, sondern kreative Lösungen zu entwickeln, die begeistern.",
+    "FOCUS": "Ich lege großen Wert auf sauberen Code, nutzerzentrierte Designs und eine effiziente Umsetzung."
+  },
+  "SKILLSET": {
+    "TITLE": "Technologien",
+    "HEADER": "Fähigkeiten",
+    "INFO": "Im Laufe meiner Reise habe ich an diversen Projekten gearbeitet und eine Vielzahl von Frontend-Technologien und -Konzepten angewendet. Ich bin stets motiviert, neue Werkzeuge und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung vorne mitzuspielen.",
+    "SECONDTITLEPT1": "Brauchen Sie",
+    "SECONDTITLEPT2": "eine andere Fähigkeit?",
+    "MORE": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen zu erweitern und neue Herausforderungen anzunehmen.",
+    "TALK": "Lassen Sie uns reden",
+    "GROWTH": "Wachstumsorientiertes Denken"
+  },
+  "POPUP": {
+    "INFO": "Ich habe ein besonderes Interesse daran, Neues zu lernen."
+  },
+  "PROJECTS": {
+    "HEADER": "Ausgewählte Projekte",
+    "INFO": "Entdecken Sie hier eine Auswahl meiner Arbeiten — interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu erleben."
+  },
+  "PROJECTCARD": {
+    "TITLE": "Worum geht es in diesem Projekt?",
+    "JOIN": {
+      "INFO": "Ein Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen und weisen Sie Benutzern und Kategorien zu."
+    },
+    "NIGHTSTALKER": {
+      "INFO": "Ein Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Helfen Sie NightStalker, Münzen und Molotowcocktails zu sammeln, um gegen den gigantischen Skull Warrior zu kämpfen."
+    },
+    "DABUBBLE": {
+      "INFO": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation."
+    }
+  }
 }

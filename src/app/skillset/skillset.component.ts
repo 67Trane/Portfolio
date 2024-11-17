@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SkillsetService } from '../services/skillset.service';
 import { PopupComponent } from './popup/popup.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 export interface IconFile {
   name: string;
@@ -11,7 +12,7 @@ export interface IconFile {
 @Component({
   selector: 'app-skillset',
   standalone: true,
-  imports: [CommonModule, PopupComponent],
+  imports: [CommonModule, PopupComponent, TranslateModule],
   templateUrl: './skillset.component.html',
   styleUrl: './skillset.component.scss'
 })

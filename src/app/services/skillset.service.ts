@@ -21,6 +21,8 @@ export class SkillsetService {
 
   iconFolderPath = '/assets/icons/skillset-icons/';
 
+
+
   getIconFiles() {
     return this.iconFiles;
   }

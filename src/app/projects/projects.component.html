@@ -1,9 +1,8 @@
-<section class="flex">
+<section class="flex pt-12 pb-24">
     <div class="p-6 md:w-2/3">
         <h2 class="text-2xl text-primary">Portfolio</h2>
-        <h1 class="text-6xl font-bold text-primary font-fira">Featured Projects</h1>
-        <p class="pt-4 pb-4">Explore a selection of my work here - interact with projects to see my skills ins action.
-        </p>
+        <h1 class="text-6xl font-bold text-primary font-fira">{{ 'PROJECTS.HEADER' | translate}}</h1>
+        <p class="pt-4 pb-4">{{ 'PROJECTS.INFO' | translate}}</p>
 
         <div *ngFor="let project of projects; let isLast = last; let i = index" [ngClass]="{'border-b-2': isLast}"
             class="border-t-2 border-primary pb-4 pt-4 md:flex md:justify-between transition-all duration-300 hover:bg-primary-opacity cursor-pointer"
@@ -19,9 +18,10 @@
                     <p class="pt-1 ">{{ tool }}</p>
                     <div *ngIf="!isLast" class="bg-primary w-px h-1/2"></div>
                 </div>
-            </div>  
+            </div>
         </div>
-        <app-project-card *ngIf="isOpenPorject" [projectIndex]="picIndex" [projects]="projects"  [isModalOpen]="isOpenPorject" (isModalOpenChange)="handleModalChange($event)"></app-project-card>
+        <app-project-card *ngIf="isOpenPorject" [projectIndex]="picIndex" [projects]="projects"
+            [isModalOpen]="isOpenPorject" (isModalOpenChange)="handleModalChange($event)"></app-project-card>
     </div>
 
 
