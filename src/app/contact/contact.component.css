@@ -1,0 +1,22 @@
+@charset "UTF-8";
+input[type=text] {
+  border: none;
+  fill: none;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+}
+
+.custom-checkbox:checked::after {
+  content: "🗸";
+  color: white;
+  font-size: 0.75rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+span {
+  color: rgb(197, 106, 106);
+}/*# sourceMappingURL=contact.component.css.map */

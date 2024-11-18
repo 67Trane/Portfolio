@@ -11,32 +11,53 @@
         <p class="pt-4 pb-6">Need a Frontend developer? <a class="text-primary" href="">Let's talk!</a></p>
     </div>
     <div>
-        <div class="border-t-2 border-b-2 border-primary p-6 gap-4 flex flex-col">
-            <h2 class="text-primary text-2xl">What's your name?</h2>
-            <input class="" type="text" name="" placeholder="Your name goes here" id="">
-        </div>
-        <div class="border-b-2 border-primary p-6 gap-4 flex flex-col">
-            <h2 class="text-primary text-2xl">What's your email?</h2>
-            <input class="" type="text" name="" placeholder="youremail@email.com" id="">
-        </div>
-        <div class="border-b-2 border-primary p-6 gap-4 flex flex-col">
-            <h2 class="text-primary text-2xl">How can i help you?</h2>
-            <input class="" type="text" name="" placeholder="Hello Mehmet, I am intrested in..." id="">
-        </div>
 
-        <div class="flex justify-center items-center gap-6 pt-6 pb-6">
-            <div class="hover:bg-primary-opacity rounded-full size-8 flex justify-center items-center">
-                <input type="checkbox"
-                    class="custom-checkbox h-6 w-6 appearance-none rounded-sm border-2 border-primary bg-transparent cursor-pointer  checked:border-primary checked:before:content-['✓'] checked:before:text-primary checked:before:flex checked:before:justify-center checked:before:items-center">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+            <div class="border-t-2 border-b-2 border-primary p-6 gap-4 flex flex-col">
+                <label for="name" class="text-primary text-2xl">What's your name?</label>
+                <input #name="ngModel" name="name" [(ngModel)]="contactData.name" id="name" class="" type="text"
+                    placeholder="Your name goes here" required>
+                @if(!name.valid && name.touched) {
+                <span>please enter a name</span>
+                }
             </div>
-            <p class="w-2/3">
-                I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined
-            </p>
-        </div>
+            <div class="border-b-2 border-primary p-6 gap-4 flex flex-col">
+                <label for="email" class="text-primary text-2xl">What's your email?</label>
+                <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email" class="" type="text"
+                    placeholder="youremail@email.com" required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                @if(!email.valid && email.touched) {
+                <span>please enter an e-mail</span>}
+            </div>
+            <div class="border-b-2 border-primary p-6 gap-4 flex flex-col">
+                <label for="message" class="text-primary text-2xl">How can i help you?</label>
+                <input #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
+                    class="" type="text" placeholder="Hello Mehmet, I am intrested in..." required>
+                @if(!message.valid && message.touched) {
+                <span class="text-red-500">please enter message</span>
+                }
+            </div>
 
 
-        <div class="flex justify-center w-full">
-            <button class="rounded-full border-white border p-4 text-xl ">Say Hello ;)</button>
-        </div>
+            <div class="flex justify-center items-center gap-6 pt-6 pb-6">
+                <div class="hover:bg-primary-opacity rounded-full size-8 flex justify-center items-center">
+                    <input type="checkbox"
+                        class="custom-checkbox h-6 w-6 appearance-none rounded-sm border-2 border-primary bg-transparent cursor-pointer  checked:border-primary checked:before:content-['✓'] checked:before:text-primary checked:before:flex checked:before:justify-center checked:before:items-center">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="w-2/3">
+                        I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined
+                    </p>
+                    @if(ischecked) {
+                    <span>Please accept the privacy policy</span>
+                    }
+                </div>
+            </div>
+
+
+            <div class="flex justify-center w-full">
+                <input type="submit" value="Say Hello ;)" class="rounded-full border-white border p-4 text-xl ">
+            </div>
+        </form>
     </div>
 </section>
