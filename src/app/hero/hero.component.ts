@@ -1,19 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NgModel } from '@angular/forms';
+
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { BurgermenuComponent } from "./burgermenu/burgermenu.component";
-import { fromReadableStreamLike } from 'rxjs/internal/observable/innerFrom';
+
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-hero',
   standalone: true,
   imports: [CommonModule, TranslateModule, BurgermenuComponent],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  templateUrl: './hero.component.html',
+  styleUrl: './hero.component.scss'
 })
-export class HeaderComponent {
+export class HeroComponent {
   burgerMenu: boolean = false;
   isChecked: boolean = false;
   lang = 'en'
