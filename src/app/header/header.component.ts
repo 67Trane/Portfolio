@@ -24,9 +24,9 @@ export class HeaderComponent {
   }
 
   onBurgerMenuCheckedChange(checked: boolean): void {
-    this.isChecked = checked; // Zustand aktualisieren
-    this.lang = checked ? 'de' : 'en'; // Sprache basierend auf Zustand setzen
-    this.switchLanguage(this.lang); // Sprachwechsel durchführen
+    this.isChecked = checked;
+    this.lang = checked ? 'de' : 'en';
+    this.switchLanguage(this.lang);
   }
 
   onCheckboxChange(event: Event): void {
