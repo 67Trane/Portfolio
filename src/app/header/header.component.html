@@ -1,7 +1,9 @@
 <section
     class="bg-hero bg-cover bg-center bg-no-repeat w-full h-dvh flex justify-center items-center text-center flex-col gap-7">
+    <div (click)="closeBurgerMenu()" class="absolute w-full h-full" [ngClass]="{ 'bg-primary-opacity': burgerMenu }">
+        <app-burgermenu class="z-40" *ngIf="burgerMenu"></app-burgermenu>
+    </div>
     <div class="absolute top-0 flex justify-between w-full items-center p-5">
-
         <div *ngIf="!hovered" (mouseover)="hoverOn()" class="flex md:order-2 cursor-pointer">
             <div class="flex text-5xl w-19 justify-center font-bold text-primary">
                 <h2 class="">M</h2>
@@ -33,7 +35,7 @@
                     class="absolute bg-primary w-1/2 h-full rounded-full transition-transform duration-300 left-0 peer-checked:translate-x-full">
                 </div>
 
-                <span  class="z-10 font-bold text-white peer-checked:font-normal peer-checked:text-primary"> EN</span>
+                <span class="z-10 font-bold text-white peer-checked:font-normal peer-checked:text-primary"> EN</span>
                 <span class="z-10 text-primary peer-checked:text-white peer-checked:font-bold ">DE</span>
             </label>
 
@@ -45,7 +47,7 @@
             </div>
         </div>
 
-        <img class="size-9 md:hidden" src="assets/icons/menu.svg" alt="">
+        <img (click)="openBurgerMenu()" class="size-9 md:hidden" src="assets/icons/menu.svg" alt="">
 
     </div>
 
@@ -53,7 +55,8 @@
         <h2 class="font-fira text-2xl md:text-4xl">Frontend Developer</h2>
         <h1 class="text-5xl md:text-8xl font-bold ">Mehmet Deliaci</h1>
         <div class=" flex w-full justify-center gap-8">
-            <a href="#projects" class="rounded-full border-white border p-4 z-10">{{ 'HEADER.PROJECTS' | translate }}</a>
+            <a href="#projects" class="rounded-full border-white border p-4 z-10">{{ 'HEADER.PROJECTS' | translate
+                }}</a>
             <a href="#contact" class="rounded-full border-white border p-4 z-10">{{ 'HEADER.CONTACT' | translate }}</a>
         </div>
     </div>
@@ -67,10 +70,11 @@
         </a>
 
         <div class="flex flex-col items-center gap-4">
-            <a ></a>
+            <a></a>
             <a href="mailto:trane_67@hotmail.de?subject=Anfrage&body=Hallo Mehmet,"
                 class="hidden md:flex -rotate-90 h-fit  items-center overflow-visible mb-3 mt-44 w-10">Trane_67&#64;hotmail.de</a>
-            <a href="mailto:trane_67@hotmail.de?subject=Anfrage&body=Hallo Mehmet," class="md:hidden"><img src="assets/icons/mail.svg" alt=""></a>
+            <a href="mailto:trane_67@hotmail.de?subject=Anfrage&body=Hallo Mehmet," class="md:hidden"><img
+                    src="assets/icons/mail.svg" alt=""></a>
             <a href="https://github.com/67Trane"><img class="" src="assets/icons/github.svg" alt=""></a>
             <a href=""><img src="assets/icons/linkedin.svg" alt=""></a>
             <div class="bg-white w-[1px] h-28"></div>

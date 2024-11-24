@@ -12,8 +12,8 @@ export class TestimonialComponent {
 
   testimonials = [
     {
-      text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eos adipisci illo deserunt nihil labore illum, eveniet debitis nemo dignissimos? Minima quae quasi ex hic blanditiis molestias doloremque adipisci iure.',
-      author: 'Hans Jürgen1'
+      text: 'Die Zusammenarbeit mit Mehmet Deliaci war eine echte Bereicherung. Er überzeugte mit technischem Know-how, strukturiertem Arbeiten und großem Engagement. Mehmet hat stets lösungsorientiert gedacht und das Team motiviert. Ich würde jederzeit wieder mit ihm zusammenarbeiten.',
+      author: 'Kai Schulz'
     },
     {
       text: 'Ein zweites Testimonial. Ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -32,12 +32,12 @@ export class TestimonialComponent {
   currentIndex = 0;
 
   get currentTranslate(): string {
-    if(window.innerWidth < 768) {
+    if (window.innerWidth < 768) {
       return `translateX(-${this.currentIndex * 100}%)`;
     } else {
       return `translateX(-${this.currentIndex * 120}%)`;
     }
-    
+
   }
 
   right() {
