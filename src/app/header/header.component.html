@@ -1,8 +1,8 @@
 <section
     class="bg-hero bg-cover bg-center bg-no-repeat w-full h-dvh flex justify-center items-center text-center flex-col gap-7">
-    <div (click)="closeBurgerMenu()" class="absolute w-full h-full"
+    <div *ngIf="burgerMenu" (click)="closeBurgerMenu()" class="absolute w-full h-full"
         [ngClass]="{ 'bg-black': burgerMenu, 'bg-opacity-50':burgerMenu }">
-        <app-burgermenu class="z-40" *ngIf="burgerMenu" [burgerMenuChecked]="isChecked"
+        <app-burgermenu class="z-40"  [burgerMenuChecked]="isChecked"
             (burgerMenuCheckedChange)="onBurgerMenuCheckedChange($event)"></app-burgermenu>
     </div>
     <div class="absolute top-0 flex justify-between w-full items-center p-5">
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <img (click)="openBurgerMenu()" class="size-9 md:hidden" src="assets/icons/menu.svg" alt="">
+        <img (click)="openBurgerMenu()" class="size-9 md:hidden cursor-pointer" src="assets/icons/menu.svg" alt="">
 
     </div>
 
@@ -57,9 +57,9 @@
         <h2 class="font-fira text-2xl md:text-4xl">Frontend Developer</h2>
         <h1 class="text-5xl md:text-8xl font-bold ">Mehmet Deliaci</h1>
         <div class=" flex w-full justify-center gap-8">
-            <a href="#projects" class="rounded-full border-white border p-4 z-10">{{ 'HEADER.PROJECTS' | translate
+            <a href="#projects" class="rounded-full border-white border p-4">{{ 'HEADER.PROJECTS' | translate
                 }}</a>
-            <a href="#contact" class="rounded-full border-white border p-4 z-10">{{ 'HEADER.CONTACT' | translate }}</a>
+            <a href="#contact" class="rounded-full border-white border p-4">{{ 'HEADER.CONTACT' | translate }}</a>
         </div>
     </div>
 

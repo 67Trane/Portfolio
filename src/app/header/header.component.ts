@@ -52,11 +52,12 @@ export class HeaderComponent {
   }
 
   openBurgerMenu() {
-    this.burgerMenu = true
+    this.burgerMenu = true;
+    document.body.classList.toggle('overflow-hidden', this.burgerMenu);
   }
 
   closeBurgerMenu() {
-    this.burgerMenu = false
+    this.burgerMenu = false;
+    document.body.classList.toggle('overflow-hidden', this.burgerMenu);
   }
-
 }
