@@ -23,7 +23,11 @@ export class HeaderComponent {
   constructor(private translate: TranslateService) {
   }
 
-
+  onBurgerMenuCheckedChange(checked: boolean): void {
+    this.isChecked = checked; // Zustand aktualisieren
+    this.lang = checked ? 'de' : 'en'; // Sprache basierend auf Zustand setzen
+    this.switchLanguage(this.lang); // Sprachwechsel durchführen
+  }
 
   onCheckboxChange(event: Event): void {
     this.isChecked = (event.target as HTMLInputElement).checked;
@@ -40,7 +44,7 @@ export class HeaderComponent {
   }
 
   hoverOn() {
-    this.hovered = true
+    this.hovered = true;
   }
 
   hoverOff() {

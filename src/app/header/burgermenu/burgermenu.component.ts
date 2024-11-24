@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output, output } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -9,5 +9,11 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './burgermenu.component.scss'
 })
 export class BurgermenuComponent {
+  @Input() burgerMenuChecked: any;
+  @Output() burgerMenuCheckedChange: EventEmitter<boolean> = new EventEmitter();
 
+  toggleChecked(event: Event): void {
+    this.burgerMenuChecked = (event.target as HTMLInputElement).checked; 
+    this.burgerMenuCheckedChange.emit(this.burgerMenuChecked); 
+  }
 }
