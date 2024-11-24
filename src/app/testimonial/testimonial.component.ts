@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-testimonial',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './testimonial.component.html',
   styleUrl: './testimonial.component.scss'
 })
@@ -12,12 +13,12 @@ export class TestimonialComponent {
 
   testimonials = [
     {
-      text: 'Die Zusammenarbeit mit Mehmet Deliaci war eine echte Bereicherung. Er überzeugte mit technischem Know-how, strukturiertem Arbeiten und großem Engagement. Mehmet hat stets lösungsorientiert gedacht und das Team motiviert. Ich würde jederzeit wieder mit ihm zusammenarbeiten.',
+      text: 'TESTIMONIALS.KAISCHULZ.TESTI',
       author: 'Kai Schulz'
     },
     {
-      text: 'Ein zweites Testimonial. Ipsum dolor sit amet, consectetur adipiscing elit.',
-      author: 'Anna Schmidt2'
+      text: 'TESTIMONIALS.DENISDUDDA.TESTI',
+      author: 'Denis Dudda'
     },
     {
       text: 'Und hier ein drittes Testimonial mit einem anderen Textinhalt.',

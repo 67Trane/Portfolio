@@ -46,5 +46,37 @@
     "DABUBBLE": {
       "INFO": "This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
     }
-  }
+  },
+  "TESTIMONIALS": {
+    "TITLE": "What my colleagues say about me",
+    "DENISDUDDA": {
+      "TESTI": "It was a pleasure working with you. Your calm and composed manner, as well as your quick grasp of new concepts, have greatly enriched our projects. I value your professionalism and look forward to future collaborations."
+    },
+    "KAISCHULZ": {
+      "TESTI": "Working with Mehmet Deliaci was a true asset. He impressed with technical expertise, structured work, and great dedication. Mehmet always thought solution-oriented and motivated the team. I would gladly work with him again anytime."
+    }
+  },
+  "CONTACT": {
+    "HEADER": "Contact Me",
+    "TITLE": "Let's Work Together",
+    "STITLE": "Got a Problem to Solve?",
+    "TEXT": "Contact me through this form. I am interested in hearing from you, learning about your ideas, and contributing to your projects with my work.",
+    "NEED": "Need a Frontend Developer?",
+    "TALK": "Let's Talk!"
+  },
+  "FORM": {
+    "NAME": "What's your name?",
+    "NAME_PLACEHOLDER": "Your name goes here",
+    "NAME_MISSING": "Please enter a name",
+    "EMAIL": "What's your email?",
+    "EMAIL_PLACEHOLDER": "youremail@email.com",
+    "EMAIL_MISSING": "Please enter an email",
+    "HELP": "How can I help you?",
+    "HELP_PLACEHOLDER": "Hello Mehmet, I am interested in ...",
+    "HELP_MISSING": "Please enter a message",
+    "PRIVACY": "I've read the <a class='text-primary' href='{{link}}'>privacy policy</a> and agree to the processing of my data as outlined.",
+    "PRIVACY_MISSING": "Please accept the privacy policy",
+    "HELLO": "Say Hello ;)"
+  },
+  "LEGALNOTICE": "Legal Notice"
 }

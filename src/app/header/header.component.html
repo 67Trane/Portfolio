@@ -1,6 +1,6 @@
 <section
     class="bg-hero bg-cover bg-center bg-no-repeat w-full h-dvh flex justify-center items-center text-center flex-col gap-7">
-    <div (click)="closeBurgerMenu()" class="absolute w-full h-full" [ngClass]="{ 'bg-primary-opacity': burgerMenu }">
+    <div (click)="closeBurgerMenu()" class="absolute w-full h-full" [ngClass]="{ 'bg-black': burgerMenu, 'bg-opacity-50':burgerMenu }">
         <app-burgermenu class="z-40" *ngIf="burgerMenu"></app-burgermenu>
     </div>
     <div class="absolute top-0 flex justify-between w-full items-center p-5">

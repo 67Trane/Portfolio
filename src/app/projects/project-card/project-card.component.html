@@ -34,7 +34,7 @@
 
         <h2 class="text-6xl font-bold font-fira">{{projects[projectIndex].name}}</h2>
         <h3 class="text-4xl text-primary font-fira pt-4 pb-4">{{ 'PROJECTCARD.TITLE' | translate}}</h3>
-        <p class="pb-4">{{projects[projectIndex].description}}</p>
+        <p class="pb-4">{{projects[projectIndex].description | translate}}</p>
 
         <div class="flex gap-6 pb-6 text-2xl">
             <div *ngFor="let tool of matchingIcons" class="flex flex-row gap-4  ">

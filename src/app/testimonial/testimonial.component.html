@@ -1,5 +1,5 @@
 <section class=" pb-24 flex flex-col items-center">
-    <h2 class="text-center text-primary text-2xl pb-6 font-fira font-bold ">What my colleagues say about me</h2>
+    <h2 class="text-center text-primary text-2xl pb-6 font-fira font-bold ">{{'TESTIMONIALS.TITLE' | translate}}</h2>
     <div class=" w-full flex relative p-6 h-96 md:gap-36 gap-3 overflow-hidden">
 
         <div *ngFor="let tesi of testimonials; let i = index; let isFirst = first"
@@ -8,7 +8,7 @@
             [class.first-testi]="isFirst"
             >
             <img class="absolute top-0 -left-7" src="assets/icons/quotes.svg" alt="">
-            <p>{{ testimonials[i].text }}</p>
+            <p>{{ testimonials[i].text | translate }}</p>
             <div class="flex bottom-6 p-6 absolute w-full items-center gap-6">
                 <div class="h-px bg-white w-full"></div>
                 <span class="text-nowrap">{{ testimonials[i].author }}</span>

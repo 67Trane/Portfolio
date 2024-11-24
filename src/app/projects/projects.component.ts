@@ -22,19 +22,19 @@ export class ProjectsComponent implements OnInit {
       "name": "Join (Kanban Board)",
       "tools": ["HTML", "CSS", "Javascript", "Firebase"],
       "picture": "assets/imgs/join.jpeg",
-      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "description": 'PROJECTCARD.JOIN.INFO',
     },
     {
       "name": "NightStalker (Game)",
       "tools": ["HTML", "CSS", "Javascript"],
       "picture": "assets/imgs/nightstalker.png",
-      "description": "Jump, run and throw game based on object-oriented approach. Help NightStalker to find coins and molotoves to fight against the gaint skull",
+      "description": "PROJECTCARD.NIGHTSTALKER.INFO",
     },
     {
       "name": "DA Bubble (Buessniss App)",
       "tools": ["Angular", "Firebase", "TypeScript"],
       "picture": "assets/imgs/da-bubble.jpeg",
-      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "description": "PROJECTCARD.DABUBBLE.INFO",
     },
   ]
 

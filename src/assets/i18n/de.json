@@ -46,5 +46,37 @@
     "DABUBBLE": {
       "INFO": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation."
     }
-  }
+  },
+  "TESTIMONIALS": {
+    "TITLE": "Was meine Kollegen über mich sagen",
+    "DENISDUDDA": {
+      "TESTI": "Es war eine Freude, mit dir zusammenzuarbeiten. Deine ruhige und gelassene Art sowie deine schnelle Auffassungsgabe haben unsere Projekte enorm bereichert. Ich schätze deine Professionalität und freue mich auf zukünftige Zusammenarbeit."
+    },
+    "KAISCHULZ": {
+      "TESTI": "Die Zusammenarbeit mit Mehmet Deliaci war eine echte Bereicherung. Er überzeugte mit technischem Know-how, strukturiertem Arbeiten und großem Engagement. Mehmet hat stets lösungsorientiert gedacht und das Team motiviert. Ich würde jederzeit wieder mit ihm zusammenarbeiten."
+    }
+  },
+  "CONTACT": {
+    "HEADER": "Kontaktiere mich",
+    "TITLE": "Lass uns zusammenarbeiten",
+    "STITLE": "Hast du ein Problem zu lösen?",
+    "TEXT": "Kontaktiere mich über dieses Formular. Ich freue mich darauf, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.",
+    "NEED": "Brauchst du einen Frontend-Entwickler?",
+    "TALK": "Lass uns sprechen!"
+  },
+  "FORM": {
+    "NAME": "Wie lautet dein Name?",
+    "NAME_PLACEHOLDER": "Dein Name kommt hierhin",
+    "NAME_MISSING": "Bitte gib einen Namen ein",
+    "EMAIL": "Wie lautet deine E-Mail-Adresse?",
+    "EMAIL_PLACEHOLDER": "deineemail@email.com",
+    "EMAIL_MISSING": "Bitte gib eine E-Mail-Adresse ein",
+    "HELP": "Wie kann ich dir helfen?",
+    "HELP_PLACEHOLDER": "Hallo Mehmet, ich bin interessiert an ...",
+    "HELP_MISSING": "Bitte gib eine Nachricht ein",
+    "PRIVACY": "Ich habe die <a class='text-primary' href='{{link}}'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten gemäß der Richtlinien zu.",
+    "PRIVACY_MISSING": "Bitte akzeptiere die Datenschutzerklärung",
+    "HELLO": "Sag Hallo ;)"
+  },
+  "LEGALNOTICE": "Impressum"
 }

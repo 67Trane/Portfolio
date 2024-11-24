@@ -1,40 +1,39 @@
 <section class="p-6 pb-24 md:flex">
     <div class="md:w-1/2">
-        <h2 class="text-primary ">Contact me</h2>
-        <h1 class="text-primary pt-2 pb-3 text-6xl font-bold">Let's work together</h1>
+        <h2 class="text-primary ">{{ 'CONTACT.HEADER' | translate}}</h2>
+        <h1 class="text-primary pt-2 pb-3 text-6xl font-bold">{{ 'CONTACT.TITLE' | translate}}</h1>
 
-        <h2 class="text-primary pb-4 font-fira font-bold">Got a problem to solve?</h2>
+        <h2 class="text-primary pb-4 font-fira font-bold">{{ 'CONTACT.STITLE' | translate}}</h2>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quibusdam iusto, aspernatur a eveniet quos.
-            Suscipit pariatur quae quo nobis veniam accusamus et minima numquam nemo corrupti maxime, veritatis aut!</p>
+        <p>{{ 'CONTACT.TEXT' | translate}}</p>
 
-        <p class="pt-4 pb-6">Need a Frontend developer? <a class="text-primary" href="">Let's talk!</a></p>
+        <p class="pt-4 pb-6">{{ 'CONTACT.NEED' | translate}} <a class="text-primary" href="">{{ 'CONTACT.TALK' | translate}}</a></p>
     </div>
     <div>
 
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
             <div class="border-t-2 border-b-2 border-primary p-6 gap-4 flex flex-col">
-                <label for="name" class="text-primary text-2xl">What's your name?</label>
+                <label for="name" class="text-primary text-2xl">{{ 'FORM.NAME' | translate }}</label>
                 <input #name="ngModel" name="name" [(ngModel)]="contactData.name" id="name" class="" type="text"
-                    placeholder="Your name goes here" required>
+                    placeholder="{{ 'FORM.NAME_PLACEHOLDER' | translate }}" required>
                 @if(!name.valid && name.touched) {
-                <span>please enter a name</span>
+                <span>{{ 'FORM.NAME_MISSING' | translate }}</span>
                 }
             </div>
             <div class="border-b-2 border-primary p-6 gap-4 flex flex-col">
-                <label for="email" class="text-primary text-2xl">What's your email?</label>
+                <label for="email" class="text-primary text-2xl">{{ 'FORM.EMAIL' | translate }}</label>
                 <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email" class="" type="text"
-                    placeholder="youremail@email.com" required
+                    placeholder="{{ 'FORM.EMAIL_PLACEHOLDER' | translate }}" required
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 @if(!email.valid && email.touched) {
-                <span>please enter an e-mail</span>}
+                <span>{{ 'FORM.EMAIL_MISSING' | translate }}</span>}
             </div>
             <div class="border-b-2 border-primary p-6 gap-4 flex flex-col">
-                <label for="message" class="text-primary text-2xl">How can i help you?</label>
+                <label for="message" class="text-primary text-2xl">{{ 'FORM.HELP' | translate }}</label>
                 <input #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
-                    class="" type="text" placeholder="Hello Mehmet, I am intrested in..." required>
+                    class="" type="text" placeholder="{{ 'FORM.HELP_PLACEHOLDER' | translate }}" required>
                 @if(!message.valid && message.touched) {
-                <span class="text-red-500">please enter message</span>
+                <span>{{ 'FORM.HELP_MISSING' | translate }}</span>
                 }
             </div>
 
@@ -45,18 +44,16 @@
                         class="custom-checkbox h-6 w-6 appearance-none rounded-sm border-2 border-primary bg-transparent cursor-pointer  checked:border-primary checked:before:content-['✓'] checked:before:text-primary checked:before:flex checked:before:justify-center checked:before:items-center">
                 </div>
                 <div class="flex flex-col gap-4">
-                    <p class="w-2/3">
-                        I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined
-                    </p>
+                    <p class="w-2/3" [innerHTML]="'FORM.PRIVACY' | translate:{ link: '/privacy-policy' }"></p>
                     @if(ischecked) {
-                    <span>Please accept the privacy policy</span>
+                    <span>{{ 'FORM.PRIVACY_MISSING' | translate }}</span>
                     }
                 </div>
             </div>
 
 
             <div class="flex justify-center w-full">
-                <input type="submit" value="Say Hello ;)" class="rounded-full border-white border p-4 text-xl ">
+                <input type="submit" value="{{ 'FORM.HELLO' | translate }}" class="rounded-full border-white border p-4 text-xl ">
             </div>
         </form>
     </div>
