@@ -78,5 +78,11 @@
     "PRIVACY_MISSING": "Bitte akzeptiere die Datenschutzerklärung",
     "HELLO": "Sag Hallo ;)"
   },
-  "LEGALNOTICE": "Impressum"
+  "LEGALNOTICE": "Impressum",
+
+  "MARQUEE": {
+    "REMOTE_WORK": "Verfügbar für Remote-Arbeit",
+    "FRONTEND_DEVELOPER": "Frontend-Entwickler",
+    "BASED_IN": "Ansässig in München"
+  }
 }
