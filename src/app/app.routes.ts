@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
-    { path: '', component: AppComponent },
-    { path: 'impressum', component: ImpressumComponent }
-];
+    { path: '', component: HomeComponent }, // Hauptseite
+    { path: 'impressum', component: ImpressumComponent } // Impressum-Seite
+  ];
