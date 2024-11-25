@@ -21,12 +21,12 @@ export class TestimonialComponent {
       author: 'Denis Dudda'
     },
     {
-      text: 'Und hier ein drittes Testimonial mit einem anderen Textinhalt.',
-      author: 'Peter Müller3'
+      text: 'TESTIMONIALS.SARAHMUELLER.TESTI',
+      author: 'Sarah Müller'
     },
     {
-      text: 'Und hier ein drittes Testimonial mit einem anderen Textinhalt.',
-      author: 'Peter Müller4'
+      text: 'TESTIMONIALS.JONASWEBER.TESTI',
+      author: 'Jonas Weber'
     }
   ];
 

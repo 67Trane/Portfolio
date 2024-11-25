@@ -50,10 +50,16 @@
   "TESTIMONIALS": {
     "TITLE": "What my colleagues say about me",
     "DENISDUDDA": {
-      "TESTI": "It was a pleasure working with you. Your calm and composed manner, as well as your quick grasp of new concepts, have greatly enriched our projects. I value your professionalism and look forward to future collaborations."
+      "TESTI": "It was a pleasure working with you. Your calm and composed manner, as well as your quick grasp of new concepts, have greatly enriched our projects. I truly appreciate your professionalism and look forward to future collaborations."
     },
     "KAISCHULZ": {
-      "TESTI": "Working with Mehmet Deliaci was a true asset. He impressed with technical expertise, structured work, and great dedication. Mehmet always thought solution-oriented and motivated the team. I would gladly work with him again anytime."
+      "TESTI": "Working with Mehmet Deliaci was a real asset. He impressed with his technical expertise, structured approach, and strong commitment. Mehmet always thought in a solution-oriented way and motivated the team. I would happily work with him again anytime."
+    },
+    "SARAHMUELLER": {
+      "TESTI": "Working with Mehmet Deliaci was always inspiring. His ability to stay focused even in stressful situations and his attention to detail elevated our project to the next level. Mehmet has the skill to creatively solve technical challenges while keeping the bigger picture in mind. He is a true asset to any team."
+    },
+    "JONASWEBER": {
+      "TESTI": "Mehmet Deliaci stands out for his exceptional work ethic and his ability to handle even the most challenging tasks with ease. He always goes the extra mile to deliver high-quality results. His communication skills and team spirit make him an ideal colleague, and I would gladly work with him again."
     }
   },
   "CONTACT": {
