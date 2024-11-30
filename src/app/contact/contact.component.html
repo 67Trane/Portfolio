@@ -7,11 +7,13 @@
 
         <p>{{ 'CONTACT.TEXT' | translate}}</p>
 
-        <p class="pt-4 pb-6">{{ 'CONTACT.NEED' | translate}} <a class="text-primary" href="">{{ 'CONTACT.TALK' | translate}}</a></p>
+        <p class="pt-4 pb-6">{{ 'CONTACT.NEED' | translate}} <a class="text-primary" href="">{{ 'CONTACT.TALK' |
+                translate}}</a></p>
     </div>
     <div>
 
-        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
+            <!-- Name -->
             <div class="border-t-2 border-b-2 border-primary p-6 gap-4 flex flex-col">
                 <label for="name" class="text-primary text-2xl">{{ 'FORM.NAME' | translate }}</label>
                 <input #name="ngModel" name="name" [(ngModel)]="contactData.name" id="name" class="" type="text"
@@ -20,14 +22,18 @@
                 <span>{{ 'FORM.NAME_MISSING' | translate }}</span>
                 }
             </div>
+
+            <!-- E-MAIL -->
             <div class="border-b-2 border-primary p-6 gap-4 flex flex-col">
                 <label for="email" class="text-primary text-2xl">{{ 'FORM.EMAIL' | translate }}</label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email" class="" type="text"
+                <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email" class="" type="email"
                     placeholder="{{ 'FORM.EMAIL_PLACEHOLDER' | translate }}" required
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 @if(!email.valid && email.touched) {
                 <span>{{ 'FORM.EMAIL_MISSING' | translate }}</span>}
             </div>
+
+            <!-- TEXT -->
             <div class="border-b-2 border-primary p-6 gap-4 flex flex-col">
                 <label for="message" class="text-primary text-2xl">{{ 'FORM.HELP' | translate }}</label>
                 <input #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
@@ -37,23 +43,28 @@
                 }
             </div>
 
-
+            <!-- CHECKBOX -->
             <div class="flex justify-center items-center gap-6 pt-6 pb-6">
                 <div class="hover:bg-primary-opacity rounded-full size-8 flex justify-center items-center">
-                    <input type="checkbox"
+                    <input type="checkbox" name="privacy" #privacy="ngModel" [(ngModel)]="contactData.privacy" required
                         class="custom-checkbox h-6 w-6 appearance-none rounded-sm border-2 border-primary bg-transparent cursor-pointer  checked:border-primary checked:before:content-['✓'] checked:before:text-primary checked:before:flex checked:before:justify-center checked:before:items-center">
                 </div>
                 <div class="flex flex-col gap-4">
                     <p class="w-2/3" [innerHTML]="'FORM.PRIVACY' | translate:{ link: '/privacy-policy' }"></p>
-                    @if(ischecked) {
+                    @if(!privacy.valid && privacy.touched) {
                     <span>{{ 'FORM.PRIVACY_MISSING' | translate }}</span>
                     }
                 </div>
             </div>
 
 
+            <!-- SUBMIT BUTTON -->
             <div class="flex justify-center w-full">
-                <input type="submit" value="{{ 'FORM.HELLO' | translate }}" class="rounded-full border-white border p-4 text-xl ">
+                <button type="submit"
+                    class="rounded-full cursor-pointer disabled:text-gray-500 disabled:border-gray-500 border-white border p-4 text-xl"
+                    [disabled]="!contactForm.valid">
+                    {{ 'FORM.HELLO' | translate }}
+                </button>
             </div>
         </form>
     </div>

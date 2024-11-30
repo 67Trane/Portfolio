@@ -1,8 +1,8 @@
 <section
     class="bg-hero bg-cover bg-center bg-no-repeat w-full h-dvh flex justify-center items-center text-center flex-col gap-7">
-    <div *ngIf="burgerMenu" (click)="closeBurgerMenu()" class="absolute w-full h-full"
+    <div *ngIf="burgerMenu" (click)="closeBurgerMenu()" class="absolute w-full h-full z-20"
         [ngClass]="{ 'bg-black': burgerMenu, 'bg-opacity-50':burgerMenu }">
-        <app-burgermenu class="z-40"  [burgerMenuChecked]="isChecked"
+        <app-burgermenu class="z-40" [burgerMenuChecked]="isChecked"
             (burgerMenuCheckedChange)="onBurgerMenuCheckedChange($event)"></app-burgermenu>
     </div>
     <div class="absolute top-0 flex justify-between w-full items-center p-5">
@@ -43,9 +43,9 @@
 
 
             <div class="hidden md:flex gap-4 justify-center font-thin">
-                <a href="#about-me">{{ 'HEADER.ABOUT' | translate }}</a>
-                <a href="#skillset">{{ 'HEADER.SKILLS' | translate }}</a>
-                <a href="#projects">{{ 'HEADER.PROJECTS' | translate }}</a>
+                <a class="link-with-dot" href="#about-me">{{ 'HEADER.ABOUT' | translate }}</a>
+                <a class="link-with-dot" href="#skillset">{{ 'HEADER.SKILLS' | translate }}</a>
+                <a class="link-with-dot" href="#projects">{{ 'HEADER.PROJECTS' | translate }}</a>
             </div>
         </div>
 
@@ -56,10 +56,17 @@
     <div class="flex gap-4 flex-col w-full">
         <h2 class="font-fira text-2xl md:text-4xl">Frontend Developer</h2>
         <h1 class="text-5xl md:text-8xl font-bold ">Mehmet Deliaci</h1>
-        <div class=" flex w-full justify-center gap-8">
-            <a href="#projects" class="rounded-full border-white border p-4">{{ 'HEADER.PROJECTS' | translate
-                }}</a>
-            <a href="#contact" class="rounded-full border-white border p-4">{{ 'HEADER.CONTACT' | translate }}</a>
+        <div class=" flex w-full justify-center gap-8 z-10">
+            <a href="#projects"
+                class="rounded-full marquee-link border-white border p-4 hover:text-primary hover:border-primary transition-all">
+                <span class="slide-show">{{ 'HEADER.PROJECTS' | translate }}</span>
+            </a>
+
+            <a href="#contact"
+                class="rounded-full marquee-link border-white border p-4 hover:text-primary hover:border-primary transition-all duration-700">
+                <span class="slide-show">{{ 'HEADER.CONTACT' | translate }}</span>
+            </a>
+
         </div>
     </div>
 
@@ -74,11 +81,26 @@
         <div class="flex flex-col items-center gap-4">
             <a></a>
             <a href="mailto:trane_67@hotmail.de?subject=Anfrage&body=Hallo Mehmet,"
-                class="hidden md:flex -rotate-90 h-fit  items-center overflow-visible mb-3 mt-44 w-10">Trane_67&#64;hotmail.de</a>
-            <a  href="mailto:trane_67@hotmail.de?subject=Anfrage&body=Hallo Mehmet," class="md:hidden"><img
+                class="hidden md:flex -rotate-90 h-fit  items-center overflow-visible mb-3 mt-44 w-10 hover:text-primary">Trane_67&#64;hotmail.de</a>
+            <a href="mailto:trane_67@hotmail.de?subject=Anfrage&body=Hallo Mehmet," class="md:hidden"><img
                     src="assets/icons/mail.svg" alt=""></a>
-            <a target="_blank" href="https://github.com/67Trane"><img class="" src="assets/icons/github.svg" alt=""></a>
-            <a target="_blank" href="https://www.linkedin.com/in/mehmet-deliaci-20663a33a/"><img src="assets/icons/linkedin.svg" alt=""></a>
+            <div class="relative group w-8 h-8 img-with-dot">
+                <a href="https://github.com/67Trane" target="_blank" rel="noopener noreferrer">
+                    <img class="absolute inset-0 w-full h-full group-hover:hidden cursor-pointer"
+                        src="assets/icons/github.svg" alt="GitHub">
+                    <img class="absolute inset-0 w-full h-full hidden group-hover:block cursor-pointer"
+                        src="assets/icons/github_white.svg" alt="GitHub">
+                </a>
+            </div>
+
+            <div class="relative group w-8 h-8 img-with-dot">
+                <a href="https://linkedin.com/in/https://www.linkedin.com/in/mehmet-deliaci-20663a33a/" target="_blank" rel="noopener noreferrer">
+                    <img class="absolute inset-0 w-full h-full group-hover:hidden cursor-pointer"
+                        src="assets/icons/linkedin.svg" alt="LinkedIn">
+                    <img class="absolute inset-0 w-full h-full hidden group-hover:block cursor-pointer"
+                        src="assets/icons/linkedin_white.svg" alt="LinkedIn">
+                </a>
+            </div>
             <div class="bg-white w-[1px] h-28"></div>
         </div>
 

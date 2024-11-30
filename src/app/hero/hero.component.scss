@@ -9,3 +9,75 @@
   -webkit-text-stroke: 2px #3dcfb6; /* Outline-Effekt */
   -webkit-text-fill-color: transparent; /* Text bleibt leer */
 }
+
+.link-with-dot {
+  position: relative;
+  font-family: fira;
+}
+
+.link-with-dot::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 6px;
+  height: 6px;
+  background-color: aqua;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.link-with-dot:hover::after {
+  opacity: 1;
+}
+
+.img-with-dot {
+  position: relative;
+}
+
+.img-with-dot::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-with-dot:hover::after {
+  opacity: 1;
+}
+.marquee-link {
+  display: inline-block;
+  overflow: hidden; /* Begrenzung des Marquee-Inhalts */
+  position: relative;
+}
+
+.marquee-link .slide-show {
+  display: inline-block;
+  white-space: nowrap; /* Verhindert Umbruch im Text */
+  position: relative;
+  transform: translateX(0); /* Startposition */
+  transition: none;
+  animation: none; /* Keine Animation, wenn nicht gehovt */
+}
+
+.marquee-link:hover .slide-show {
+  animation: text-marquee 2s linear infinite; /* Startet die Animation beim Hover */
+}
+
+@keyframes text-marquee {
+  0% {
+    transform: translateX(150%); /* Startposition rechts außerhalb */
+  }
+  100% {
+    transform: translateX(-150%); /* Endposition links außerhalb */
+  }
+}
