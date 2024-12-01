@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { BurgermenuComponent } from '../../hero/burgermenu/burgermenu.component';
 import { CommonModule } from '@angular/common';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-header',
@@ -12,16 +13,18 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
 
-  constructor(private translate: TranslateService) {
-    
+  constructor(private translate: TranslateService, public global: GlobalService) {
+
   }
 
+  modeChecked = false;
+  mode = "dark"
   isChecked: boolean = false;
   burgerMenu: boolean = false;
   lang = 'en'
   hovered: boolean = false
 
-  
+
   switchLanguage(lang: string) {
     this.translate.use(lang);
   }
@@ -49,12 +52,25 @@ export class HeaderComponent {
 
   onCheckboxChange(event: Event): void {
     this.isChecked = (event.target as HTMLInputElement).checked;
-    if(this.isChecked) {
-      this.lang ='de'
+    if (this.isChecked) {
+      this.lang = 'de'
     } else {
       this.lang = 'en'
     }
     this.switchLanguage(this.lang)
+  }
+
+  switchTheme(event: Event) {
+    this.modeChecked = (event.target as HTMLInputElement).checked;
+    if (this.modeChecked) {
+      this.global.themeMode = true
+      this.mode = "dark"
+    } else {
+      this.global.themeMode = false
+      console.log("light")
+      this.mode = "light"
+      console.log(this.modeChecked + "light")
+    }
   }
 
   hoverOff() {

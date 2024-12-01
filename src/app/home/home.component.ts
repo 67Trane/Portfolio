@@ -10,6 +10,7 @@ import { ProjectsComponent } from '../projects/projects.component';
 import { TestimonialComponent } from '../testimonial/testimonial.component';
 import { ContactComponent } from '../contact/contact.component';
 import { FooterComponent } from '../footer/footer.component';
+import { GlobalService } from '../services/global.service';
 
 
 @Component({
@@ -25,7 +26,7 @@ export class HomeComponent {
   mouseY: number = 0;
   currentLang = 'en'; // Standard-Sprache
 
-  constructor(private translate: TranslateService, private router: Router) {
+  constructor(private translate: TranslateService, private router: Router, public global: GlobalService) {
     this.translate.setDefaultLang(this.currentLang);
   }
 
