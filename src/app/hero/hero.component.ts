@@ -14,6 +14,7 @@ import { HeaderComponent } from "../shared/header/header.component";
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+  loop = Array(10)
   
  
   
