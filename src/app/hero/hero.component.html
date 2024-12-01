@@ -1,57 +1,6 @@
 <section
     class="bg-hero bg-cover bg-center bg-no-repeat w-full h-dvh flex justify-center items-center text-center flex-col gap-7">
-    <div *ngIf="burgerMenu" (click)="closeBurgerMenu()" class="absolute w-full h-full z-20"
-        [ngClass]="{ 'bg-black': burgerMenu, 'bg-opacity-50':burgerMenu }">
-        <app-burgermenu class="z-40" [burgerMenuChecked]="isChecked"
-            (burgerMenuCheckedChange)="onBurgerMenuCheckedChange($event)"></app-burgermenu>
-    </div>
-    <div class="absolute top-0 flex justify-between w-full items-center p-5">
-        <div *ngIf="!hovered" (mouseover)="hoverOn()" class="flex md:order-2 cursor-pointer">
-            <div class="flex text-5xl w-19 justify-center font-bold text-primary">
-                <h2 class="">M</h2>
-                <h2 class="-ml-3">D</h2>
-            </div>
-            <div class="hidden md:flex flex-col text-start font-bold text-xl">
-                <h2>Mehmet</h2>
-                <h2 class="-mt-2">Deliaci</h2>
-            </div>
-        </div>
-
-        <div *ngIf="hovered" class="flex md:order-2 cursor-pointer" (mouseleave)="hoverOff()">
-            <div class="flex text-5xl w-19 justify-center text-primary">
-                <h2 class="font-bold outline-logo">M</h2>
-                <h2 class="-ml-2 font-bold outline-logo">D</h2>
-            </div>
-            <div class="hidden md:flex flex-col text-start font-bold text-xl ">
-                <h2 class="outline">Mehmet</h2>
-                <h2 class="-mt-2 outline">Deliaci</h2>
-            </div>
-        </div>
-
-        <div class="flex gap-6">
-            <label
-                class="hidden md:flex border border-primary rounded-full gap-4 items-center px-2 h-6 relative cursor-pointer">
-                <input type="checkbox" class="sr-only peer" [checked]="isChecked" (change)="onCheckboxChange($event)" />
-
-                <div
-                    class="absolute bg-primary w-1/2 h-full rounded-full transition-transform duration-300 left-0 peer-checked:translate-x-full">
-                </div>
-
-                <span class="z-10 font-bold text-white peer-checked:font-normal peer-checked:text-primary"> EN</span>
-                <span class="z-10 text-primary peer-checked:text-white peer-checked:font-bold ">DE</span>
-            </label>
-
-
-            <div class="hidden md:flex gap-4 justify-center font-thin">
-                <a class="link-with-dot" href="#about-me">{{ 'HEADER.ABOUT' | translate }}</a>
-                <a class="link-with-dot" href="#skillset">{{ 'HEADER.SKILLS' | translate }}</a>
-                <a class="link-with-dot" href="#projects">{{ 'HEADER.PROJECTS' | translate }}</a>
-            </div>
-        </div>
-
-        <img (click)="openBurgerMenu()" class="size-9 md:hidden cursor-pointer" src="assets/icons/menu.svg" alt="">
-
-    </div>
+    <app-header class="w-full absolute top-0 background-gradiant h-32"></app-header>
 
     <div class="flex gap-4 flex-col w-full">
         <h2 class="font-fira text-2xl md:text-4xl">Frontend Developer</h2>
@@ -70,7 +19,7 @@
         </div>
     </div>
 
-    <div class="flex justify-between w-full absolute bottom-0 px-5 overflow-hidden ">
+    <div class="flex justify-between w-full absolute bottom-0 px-5 2xl:w-[1580px] overflow-hidden ">
         <a href="#contact" class="flex flex-col items-center gap-5 justify-end">
             <button class="rounded-full border-primary border ">
                 <img class="hover:animate-slidedown p-3 py-5" src="assets/icons/arrow-down.svg" alt="">
@@ -94,7 +43,8 @@
             </div>
 
             <div class="relative group w-8 h-8 img-with-dot">
-                <a href="https://linkedin.com/in/https://www.linkedin.com/in/mehmet-deliaci-20663a33a/" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/https://www.linkedin.com/in/mehmet-deliaci-20663a33a/" target="_blank"
+                    rel="noopener noreferrer">
                     <img class="absolute inset-0 w-full h-full group-hover:hidden cursor-pointer"
                         src="assets/icons/linkedin.svg" alt="LinkedIn">
                     <img class="absolute inset-0 w-full h-full hidden group-hover:block cursor-pointer"

@@ -1,34 +1,38 @@
-<div class="p-6 pt-40 pb-40 bg-skillset bg-no-repeat bg-cover bg-left md:flex">
-    <div>
-        <h2 class="text-primary pb-6 text-2xl ">{{ 'SKILLSET.TITLE' | translate}}</h2>
-        <div class="border-primary border rounded-3xl p-10 bg-primary bg-opacity-5 backdrop-blur-md">
-            <h1 class="text-primary text-6xl font-bold pb-6 font-fira">{{ 'SKILLSET.HEADER' | translate}}</h1>
-            <p>{{ 'SKILLSET.INFO' | translate}}</p>
+<section class="bg-skillset bg-no-repeat bg-cover bg-left">
+    <div class="p-6 pt-40 pb-40  2xl:w-[1580px] m-auto md:flex ">
+        <div>
+            <h2 class="text-primary pb-6 text-2xl ">{{ 'SKILLSET.TITLE' | translate}}</h2>
+            <div class="border-primary border rounded-3xl p-10 bg-primary bg-opacity-5 backdrop-blur-md">
+                <h1 class="text-primary text-6xl font-bold pb-6 font-fira">{{ 'SKILLSET.HEADER' | translate}}</h1>
+                <p>{{ 'SKILLSET.INFO' | translate}}</p>
 
-            <h2 class="flex gap-1 pt-6 pb-6 text-2xl">{{ 'SKILLSET.SECONDTITLEPT1' | translate}}<p class="text-primary text-2xl">{{ 'SKILLSET.SECONDTITLEPT2' | translate}}</p>
-            </h2>
+                <h2 class="flex gap-1 pt-6 pb-6 text-2xl">{{ 'SKILLSET.SECONDTITLEPT1' | translate}}<p
+                        class="text-primary text-2xl">{{ 'SKILLSET.SECONDTITLEPT2' | translate}}</p>
+                </h2>
 
-            <p class="pb-6">{{ 'SKILLSET.MORE' | translate}}</p>
+                <p class="pb-6">{{ 'SKILLSET.MORE' | translate}}</p>
 
-            <button class="rounded-full border-white border p-4 px-7">{{ 'SKILLSET.TALK' | translate}}</button>
+                <button class="rounded-full border-white border p-4 px-7">{{ 'SKILLSET.TALK' | translate}}</button>
+            </div>
+        </div>
+
+
+
+
+        <div
+            class="flex w-full flex-wrap gap-14 items-center justify-center p-6 pb-14 md:gap-20 relative overflow-hidden md:pr-24">
+            <div *ngFor="let icon of iconFiles; let isLast = last"
+                class="flex flex-col items-center size-16 gap-2 cursor-pointer" (mouseover)="hoverPopUp(icon.name)"
+                (mouseleave)="closePopUp()">
+                <app-popup *ngIf="isLast && isHovered" class="flex -translate-y-52 absolute"></app-popup>
+                @defer (on viewport) {
+                <img class="size-16 hover:scale-110 transition-all ease-in duration-100"
+                    [src]="iconFolderPath + icon.file" [alt]="icon.name">
+                <p class="font-fira">{{icon.name}}</p>
+                } @placeholder {
+                <div>Icon loading...</div>
+                }
+            </div>
         </div>
     </div>
-
-
-
-
-    <div class="flex w-full flex-wrap gap-14 items-center justify-center p-6 pb-14 md:gap-20 relative overflow-hidden md:pr-24">
-        <div *ngFor="let icon of iconFiles; let isLast = last"
-            class="flex flex-col items-center size-16 gap-2 cursor-pointer" (mouseover)="hoverPopUp(icon.name)"
-            (mouseleave)="closePopUp()">
-            <app-popup *ngIf="isLast && isHovered" class="flex -translate-y-52 absolute"></app-popup>
-            @defer (on viewport) {
-            <img class="size-16 hover:scale-110 transition-all ease-in duration-100" [src]="iconFolderPath + icon.file"
-                [alt]="icon.name">
-            <p class="font-fira">{{icon.name}}</p>
-            } @placeholder {
-            <div>Icon loading...</div>
-            }
-        </div>
-    </div>
-</div>
+</section>
