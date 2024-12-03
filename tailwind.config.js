@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         primary: "#3dcfb6", 'primary-opacity': "rgba(61, 207, 182, 0.3)",
         secondary: "#1C1C1C",
-        lightprimary: "#6FE3D6",
+        lightprimary: "#3DCEB5",
         lightsecondary: "#D6D6D6",
       },
       fontFamily: {
@@ -17,7 +17,9 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/assets/imgs/header-bg.svg')",
+        heroLight: "url('/assets/imgs/header-bg-light.svg')",
         skillset: "url('/assets/imgs/skillset-bg.svg')",
+        skillsetLight: "url('/assets/imgs/skillset-bg-light.svg')",
       },
       keyframes: {
         marquee: {

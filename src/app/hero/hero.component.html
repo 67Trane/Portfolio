@@ -1,5 +1,6 @@
 <section
-    class="bg-hero bg-cover bg-center bg-no-repeat w-full h-dvh flex justify-center items-center text-center flex-col gap-7">
+    class=" bg-cover bg-center bg-no-repeat w-full h-dvh flex justify-center items-center text-center flex-col gap-7"
+    [ngClass]="global.themeMode ? 'bg-heroLight':'bg-hero' ">
     <app-header class="w-full absolute top-0 background-gradiant h-32"></app-header>
 
     <div class="flex gap-4 flex-col w-full">
@@ -56,7 +57,7 @@
 
         <div
             class="overflow-hidden absolute w-[150%] -mx-2 flex gap-5 bg-gray-300 bg-opacity-10 py-3 bottom-10 text-primary overflow-x-hidden whitespace-nowrap left-0 -rotate-3 backdrop-blur-sm">
-           
+
             <div *ngFor="let _ of loop;" class="animate-marquee flex gap-5">
                 <li>{{ 'MARQUEE.REMOTE_WORK' | translate }}</li>
                 <li>{{ 'MARQUEE.FRONTEND_DEVELOPER' | translate }}</li>

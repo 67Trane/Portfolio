@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from "../shared/header/header.component";
+import { GlobalService } from '../services/global.service';
 
 
 
@@ -20,7 +21,7 @@ export class HeroComponent {
   
  
 
-  constructor() {
+  constructor(public global: GlobalService) {
   }
 
  

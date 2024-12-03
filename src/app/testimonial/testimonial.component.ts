@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { GlobalService } from '../services/global.service';
 
 @Component({
   selector: 'app-testimonial',
@@ -10,6 +11,8 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './testimonial.component.scss'
 })
 export class TestimonialComponent {
+
+  constructor(public global: GlobalService) {}
 
   testimonials = [
     {

@@ -13,11 +13,21 @@
 }
 
 .background-gradiant-left {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  background-image: linear-gradient(to right, rgba(28,28,28,0.8), rgba(0,0,0,0));
+  z-index: 1;
+}
+
+.background-gradiant-left-light {
+  background-image: linear-gradient(to right, rgba(214,214,214,0.8), rgba(0,0,0,0));
   z-index: 1;
 }
 
 .background-gradiant-right {
-  background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  background-image: linear-gradient(to left, rgba(28,28,28,0.8), rgba(0,0,0,0));
+  z-index: 1;
+}
+
+.background-gradiant-right-light {
+  background-image: linear-gradient(to left, rgba(214,214,214,0.8), rgba(0,0,0,0));
   z-index: 1;
 }

@@ -18,7 +18,6 @@ export class HeaderComponent {
   }
 
   modeChecked = false;
-  mode = "dark"
   isChecked: boolean = false;
   burgerMenu: boolean = false;
   lang = 'en'
@@ -64,12 +63,8 @@ export class HeaderComponent {
     this.modeChecked = (event.target as HTMLInputElement).checked;
     if (this.modeChecked) {
       this.global.themeMode = true
-      this.mode = "dark"
     } else {
       this.global.themeMode = false
-      console.log("light")
-      this.mode = "light"
-      console.log(this.modeChecked + "light")
     }
   }
 

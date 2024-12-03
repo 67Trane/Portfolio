@@ -19,19 +19,19 @@ export class ProjectsComponent implements OnInit {
 
   projects = [
     {
-      "name": "Join (Kanban Board)",
+      "name": "Join",
       "tools": ["HTML", "CSS", "Javascript", "Firebase"],
       "picture": "assets/imgs/join.jpeg",
       "description": 'PROJECTCARD.JOIN.INFO',
     },
     {
-      "name": "NightStalker (Game)",
+      "name": "NightStalker",
       "tools": ["HTML", "CSS", "Javascript"],
       "picture": "assets/imgs/nightstalker.png",
       "description": "PROJECTCARD.NIGHTSTALKER.INFO",
     },
     {
-      "name": "DA Bubble (Buessniss App)",
+      "name": "DA Bubble",
       "tools": ["Angular", "Firebase", "TypeScript"],
       "picture": "assets/imgs/da-bubble.jpeg",
       "description": "PROJECTCARD.DABUBBLE.INFO",

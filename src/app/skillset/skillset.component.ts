@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { SkillsetService } from '../services/skillset.service';
 import { PopupComponent } from './popup/popup.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { GlobalService } from '../services/global.service';
 
 export interface IconFile {
   name: string;
@@ -22,7 +23,7 @@ export class SkillsetComponent {
   isHovered: boolean = false
 
 
-  constructor(private skillsetService: SkillsetService) {
+  constructor(private skillsetService: SkillsetService, public global: GlobalService) {
     this.iconFiles = this.skillsetService.getIconFiles();
     this.iconFolderPath = this.skillsetService.getIconFolderPath();
   }
