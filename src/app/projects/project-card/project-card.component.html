@@ -1,9 +1,9 @@
 <section
     class="fixed flex flex-col top-5 left-5 right-5 bottom-5 h-vh rounded-3xl bg-hero bg-cover bg-no-repeat z-50 border-primary border">
-    <div class="absolute top-0 right-0 flex self-end p-6">
+    <div class="absolute top-0 right-0 flex self-end">
 
         <svg (click)="toggleModal()"
-            class="size-10 m-6 cursor-pointer hover:text-primary hover:scale-150 origin-center transition-transform duration-300"
+            class="size-10 m-4 cursor-pointer hover:text-primary hover:scale-150 origin-center transition-transform duration-300"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path d="M6 18L18 6M6 6l12 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
@@ -12,7 +12,7 @@
 
 
 
-    <div (click)="nextProject()" class="absolute bottom-0 p-6 flex justify-end w-full items-center text-primary gap-4 next-project ">
+    <div (click)="nextProject()" class="absolute bottom-2 flex justify-end w-full items-center text-primary gap-4 pr-7 next-project ">
         <span class="text-2xl">Next project</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -22,19 +22,19 @@
 
     </div>
 
-    <div class="self-center md:order-2 md:w-1/2  p-6 md:mt-0 mt-24 h-auto w-full flex justify-center items-center">
-        <img class="rounded-xl" src="{{projects[projectIndex].picture}}" alt="">
+    <div class="self-center md:order-2 md:w-1/2  p-6 md:mt-0 mt-8 h-auto w-full flex justify-center items-center">
+        <img class="rounded-xl w-60 md:w-full" src="{{projects[projectIndex].picture}}" alt="">
     </div>
 
 
     <div class="p-6 pt-0 md:w-1/2">
-        <h1 class="text-7xl text-primary font-bold">
+        <h1 class="text-lg text-primary font-bold md:text-4xl">
             {{ (projectIndex + 1) | number:'2.0' }}
         </h1>
 
-        <h2 class="text-6xl font-bold font-fira">{{projects[projectIndex].name}}</h2>
-        <h3 class="text-4xl text-primary font-fira pt-4 pb-4">{{ 'PROJECTCARD.TITLE' | translate}}</h3>
-        <p class="pb-4">{{projects[projectIndex].description | translate}}</p>
+        <h2 class="text-lg font-bold font-fira md:text-4xl">{{projects[projectIndex].name}}</h2>
+        <h3 class="text-lg text-primary font-fira pt-4 pb-4 md:text-4xl">{{ 'PROJECTCARD.TITLE' | translate}}</h3>
+        <p class="pb-4 text-sm md:text-lg">{{projects[projectIndex].description | translate}}</p>
 
         <div class="flex gap-6 pb-6 text-2xl">
             <div *ngFor="let tool of matchingIcons" class="flex flex-row gap-4  ">
