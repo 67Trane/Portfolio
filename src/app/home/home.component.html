@@ -1,6 +1,6 @@
-<div class="flex absolute inset-0 flex-col">
-    <app-hero class=" text-white" [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'"></app-hero>
-    <app-about-me id="about-me" [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'" class="bg-secondary text-white p-6 md:p-12 "></app-about-me>
+<div class="flex flex-col">
+    <app-hero class="text-white" [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'"></app-hero>
+    <app-about-me id="about-me" [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'" class="bg-secondary text-white p-6 md:p-12"></app-about-me>
     <app-skillset id="skillset" [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'" class="bg-secondary text-white"></app-skillset>
     <app-projects id="projects" [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'" class="bg-secondary text-white"></app-projects>
     <app-testimonial [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'" class="bg-secondary text-white"></app-testimonial>
