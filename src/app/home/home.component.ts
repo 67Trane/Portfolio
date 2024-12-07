@@ -9,8 +9,8 @@ import { SkillsetComponent } from '../skillset/skillset.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { TestimonialComponent } from '../testimonial/testimonial.component';
 import { ContactComponent } from '../contact/contact.component';
-import { FooterComponent } from '../footer/footer.component';
 import { GlobalService } from '../services/global.service';
+import { FooterComponent } from '../shared/footer/footer.component';
 
 
 @Component({
