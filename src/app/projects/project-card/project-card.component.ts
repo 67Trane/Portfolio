@@ -55,4 +55,9 @@ export class ProjectCardComponent implements OnInit {
     let projectname = this.projects[this.projectIndex].name.toLowerCase().split("(")
     window.open(`https://mehmet-deliaci.net/${projectname[0]}`, '_self');
   }
+
+  openGithub() {
+    let githublink = this.projects[this.projectIndex].github
+    window.open(`${githublink}`, '_self');
+  }
 }

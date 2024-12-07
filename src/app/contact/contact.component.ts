@@ -22,6 +22,7 @@ export class ContactComponent {
     privacy: false,
   }
 
+  isMessageSent = false
   ischecked: boolean = false;
 
 
@@ -40,6 +41,7 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.sendMessage()
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -49,11 +51,25 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info('send post complete'), 
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
     }
+  }
+
+  sendMessage() {
+    // Simuliere das Senden der Nachricht
+    this.isMessageSent = true;
+
+    // Nachricht nach 5 Sekunden automatisch schließen
+    setTimeout(() => {
+      this.isMessageSent = false;
+    }, 6000);
+  }
+
+  closeMessage() {
+    this.isMessageSent = false;
   }
 }

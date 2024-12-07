@@ -1,3 +1,3 @@
-
+<app-header class="text-white w-full absolute z-10 top-0 background-gradiant h-32"></app-header>
 <router-outlet></router-outlet>
-<footer class="hidden" *ngIf="!isImpressumRoute()"></footer>
+<app-footer [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'" class="bottom-0 absolute text-white"></app-footer>

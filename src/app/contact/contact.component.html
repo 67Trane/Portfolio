@@ -1,4 +1,13 @@
 <section class="p-6 pb-24 md:flex 2xl:w-[1580px] 2xl:m-auto">
+    <div class="fixed right-[25%] bg-primary text-white p-4 rounded-lg shadow-lg transition-all duration-500 ease-in-out transform -z-1"
+        [ngClass]="{ 'translate-y-0 top-[50%] opacity-100': isMessageSent, 'translate-y-[-20%] -top-10 opacity-0': !isMessageSent }">
+        <p>Danke, {{ contactData.name }} Ihre Nachricht wurde erfolgreich übermittelt.<br>Ich werde mich in Kürze mit Ihnen in Verbindung setzen.</p>
+        <button (click)="closeMessage()" class="absolute top-1 right-2 text-white">✖</button>
+    </div>
+
+
+
+
     <div class="md:w-1/2">
         <h2 class="text-primary ">{{ 'CONTACT.HEADER' | translate}}</h2>
         <h1 class="text-primary pt-2 pb-3 text-6xl font-bold">{{ 'CONTACT.TITLE' | translate}}</h1>
@@ -15,7 +24,8 @@
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
             <!-- Name -->
             <div class="border-t-2 border-b-2 border-primary p-6 gap-4 flex flex-col">
-                <label for="name" class="text-primary text-2xl">{{ 'FORM.NAME' | translate }}</label>
+                <label (click)="sendMessage()" for="name" class="text-primary text-2xl">{{ 'FORM.NAME' | translate
+                    }}</label>
                 <input #name="ngModel" name="name" [(ngModel)]="contactData.name" id="name" class="" type="text"
                     placeholder="{{ 'FORM.NAME_PLACEHOLDER' | translate }}" required>
                 @if(!name.valid && name.touched) {

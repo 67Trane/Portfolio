@@ -1,0 +1,13 @@
+.dark-mode {
+    color: white;
+    @apply bg-secondary
+  }
+
+  .light-mode {
+    @apply text-lightprimary;
+    @apply bg-lightsecondary;
+  }
+
+  .background-gradiant {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+  }

@@ -23,12 +23,14 @@ export class ProjectsComponent implements OnInit {
       "tools": ["HTML", "CSS", "Javascript", "Firebase"],
       "picture": "assets/imgs/join.jpeg",
       "description": 'PROJECTCARD.JOIN.INFO',
+      "github": "https://github.com/67Trane/join",
     },
     {
       "name": "NightStalker",
       "tools": ["HTML", "CSS", "Javascript"],
       "picture": "assets/imgs/nightstalker.png",
       "description": "PROJECTCARD.NIGHTSTALKER.INFO",
+      "github": "https://github.com/67Trane/nightstalker",
     },
     {
       "name": "DA Bubble",
