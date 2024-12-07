@@ -1,3 +1,11 @@
-<app-header class="text-white w-full absolute z-10 top-0 background-gradiant h-32"></app-header>
-<router-outlet></router-outlet>
-<app-footer [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'" class="bottom-0 absolute text-white"></app-footer>
+<div (mousemove)="onMouseMove($event)">
+    <app-header class="text-white w-full absolute z-10 top-0 background-gradiant h-32"></app-header>
+
+    <router-outlet></router-outlet>
+
+    <app-footer [ngClass]="global.themeMode ?  'light-mode' : 'dark-mode'" 
+        class="bottom-0 absolute w-full text-white"></app-footer>
+
+    <div class="hidden md:flex size-32 cursor-shadow -translate-x-1/2 -translate-y-1/2"
+        [ngStyle]="{'left.px': mouseX, 'top.px': mouseY}"></div>
+</div>
