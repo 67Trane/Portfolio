@@ -62,11 +62,11 @@
                 </div>
                 <div class="flex flex-col gap-4">
                     <div>
-                        <p class="w-2/3" [innerHTML]="'FORM.PRIVACY1' | translate"></p>
+                        <p class="w-2/3"> {{'FORM.PRIVACY1' | translate}}</p>
                         <a [routerLink]="'/privacy-policy'" class="text-nowrap text-primary" rel="noopener noreferrer">
                             {{ 'FORM.PRIVACY2' | translate }}
                         </a>
-                        <p class="w-2/3" [innerHTML]="'FORM.PRIVACY3' | translate"></p>
+                        <p class="w-2/3">{{'FORM.PRIVACY3' | translate}}</p>
                     </div>
                     @if(!privacy.valid && privacy.touched) {
                     <span>{{ 'FORM.PRIVACY_MISSING' | translate }}</span>
