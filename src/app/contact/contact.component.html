@@ -1,7 +1,8 @@
 <section class="p-6 pb-24 md:flex 2xl:w-[1580px] 2xl:m-auto">
     <div class="fixed right-[25%] bg-primary text-white p-4 rounded-lg shadow-lg transition-all duration-500 ease-in-out transform -z-1"
         [ngClass]="{ 'translate-y-0 top-[50%] opacity-100': isMessageSent, 'translate-y-[-20%] -top-10 opacity-0': !isMessageSent }">
-        <p>Danke, {{ contactData.name }} Ihre Nachricht wurde erfolgreich übermittelt.<br>Ich werde mich in Kürze mit Ihnen in Verbindung setzen.</p>
+        <p>Danke, {{ contactData.name }} Ihre Nachricht wurde erfolgreich übermittelt.<br>Ich werde mich in Kürze mit
+            Ihnen in Verbindung setzen.</p>
         <button (click)="closeMessage()" class="absolute top-1 right-2 text-white">✖</button>
     </div>
 
@@ -60,7 +61,13 @@
                         class="custom-checkbox h-6 w-6 appearance-none rounded-sm border-2 border-primary bg-transparent cursor-pointer  checked:border-primary checked:before:content-['✓'] checked:before:text-primary checked:before:flex checked:before:justify-center checked:before:items-center">
                 </div>
                 <div class="flex flex-col gap-4">
-                    <p class="w-2/3" [innerHTML]="'FORM.PRIVACY' | translate:{ link: '/privacy-policy' }"></p>
+                    <div>
+                        <p class="w-2/3" [innerHTML]="'FORM.PRIVACY1' | translate"></p>
+                        <a [routerLink]="'/privacy-policy'" class="text-nowrap text-primary" rel="noopener noreferrer">
+                            {{ 'FORM.PRIVACY2' | translate }}
+                        </a>
+                        <p class="w-2/3" [innerHTML]="'FORM.PRIVACY3' | translate"></p>
+                    </div>
                     @if(!privacy.valid && privacy.touched) {
                     <span>{{ 'FORM.PRIVACY_MISSING' | translate }}</span>
                     }

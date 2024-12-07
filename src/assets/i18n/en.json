@@ -80,7 +80,9 @@
     "HELP": "How can I help you?",
     "HELP_PLACEHOLDER": "Hello Mehmet, I am interested in ...",
     "HELP_MISSING": "Please enter a message",
-    "PRIVACY": "I've read the <a class='text-primary' target='_blank' href='{{link}}'>privacy policy</a> and agree to the processing of my data as outlined.",
+    "PRIVACY1": "I have read the ",
+    "PRIVACY2": "privacy policy ",
+    "PRIVACY3": "and agree to the processing of my data in accordance with the guidelines.",
     "PRIVACY_MISSING": "Please accept the privacy policy",
     "HELLO": "Say Hello ;)"
   },
