@@ -61,10 +61,7 @@ export class ContactComponent {
   }
 
   sendMessage() {
-    // Simuliere das Senden der Nachricht
     this.isMessageSent = true;
-
-    // Nachricht nach 5 Sekunden automatisch schließen
     setTimeout(() => {
       this.isMessageSent = false;
     }, 6000);
