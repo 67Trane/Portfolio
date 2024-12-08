@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GlobalService {
   public themeMode: boolean = false;
-
+  public burgermenuIsOpen: boolean = false;
 
   constructor() { }
 }

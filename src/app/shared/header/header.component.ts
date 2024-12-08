@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { BurgermenuComponent } from '../../hero/burgermenu/burgermenu.component';
 import { CommonModule } from '@angular/common';
 import { GlobalService } from '../../services/global.service';
+import { BurgermenuComponent } from './burgermenu/burgermenu.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [BurgermenuComponent, CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, BurgermenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -29,12 +29,12 @@ export class HeaderComponent {
   }
 
   openBurgerMenu() {
-    this.burgerMenu = true;
+    this.global.burgermenuIsOpen = true;
     document.body.classList.toggle('overflow-hidden', this.burgerMenu);
   }
 
   closeBurgerMenu() {
-    this.burgerMenu = false;
+    this.global.burgermenuIsOpen = false;
     document.body.classList.toggle('overflow-hidden', this.burgerMenu);
   }
 

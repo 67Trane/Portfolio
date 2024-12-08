@@ -1,9 +1,7 @@
 <section class="w-full 2xl:w-[1580px] h-32 m-auto flex">
-    <div *ngIf="burgerMenu" (click)="closeBurgerMenu()" class="absolute w-full h-full z-20 "
-        [ngClass]="{ 'bg-black': burgerMenu, 'bg-opacity-50':burgerMenu }">
-        <app-burgermenu class="z-40" [burgerMenuChecked]="isChecked"
-            (burgerMenuCheckedChange)="onBurgerMenuCheckedChange($event)"></app-burgermenu>
-    </div>
+
+    <app-burgermenu class="z-40" *ngIf="global.burgermenuIsOpen"></app-burgermenu>
+
     <div class=" flex justify-between w-full items-center p-5">
         <div *ngIf="!hovered" (mouseover)="hoverOn()" class="flex md:order-2 cursor-pointer">
             <div class="flex text-5xl w-19 justify-center font-bold text-primary">

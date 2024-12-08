@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { GlobalService } from '../../services/global.service';
+import { GlobalService } from '../../../services/global.service';
+
 
 @Component({
   selector: 'app-burgermenu',
