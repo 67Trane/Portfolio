@@ -1,6 +1,7 @@
 <section class="p-6 pb-24 md:flex 2xl:w-[1580px] 2xl:m-auto">
     <div class="fixed right-[25%] bg-primary text-white p-4 rounded-lg shadow-lg transition-all duration-500 ease-in-out transform -z-1"
-        [ngClass]="{ 'translate-y-0 top-[50%] opacity-100': isMessageSent, 'translate-y-[-20%] -top-10 opacity-0': !isMessageSent }">
+    *ngIf="messageIsSend"    
+    [ngClass]="{ 'translate-y-0 top-[50%] opacity-100': isMessageSent, 'translate-y-[-20%] -top-10 opacity-0': !isMessageSent }">
         <p>Danke, {{ contactname }} Ihre Nachricht wurde erfolgreich übermittelt.<br>Ich werde mich in Kürze mit
             Ihnen in Verbindung setzen.</p>
         <button (click)="closeMessage()" class="absolute top-1 right-2 text-white">✖</button>
