@@ -1,3 +1,10 @@
 a {
-    font-family: fira;
+  font-family: fira;
+}
+
+switch {
+  > span {
+    display: flex;
+    justify-content: space-between;
+  }
 }
