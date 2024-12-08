@@ -13,6 +13,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  contactname:string = "";
 
   http = inject(HttpClient);
 
@@ -42,6 +43,7 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.contactname = this.contactData.name
       this.sendMessage()
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
