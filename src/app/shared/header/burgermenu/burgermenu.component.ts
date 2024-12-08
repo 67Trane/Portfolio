@@ -39,8 +39,10 @@ export class BurgermenuComponent {
   onCheckboxChange(event: Event): void {
     this.isChecked = (event.target as HTMLInputElement).checked;
     if (this.isChecked) {
+      this.global.languageDe = true
       this.lang = 'de'
     } else {
+      this.global.languageDe = false
       this.lang = 'en'
     }
     this.switchLanguage(this.lang)
