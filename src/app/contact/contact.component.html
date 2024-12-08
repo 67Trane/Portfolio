@@ -26,7 +26,7 @@
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
             <!-- Name -->
             <div class="border-t-2 border-b-2 border-primary p-6 gap-4 flex flex-col">
-                <label (click)="sendMessage()" for="name" class="text-primary text-2xl">{{ 'FORM.NAME' | translate
+                <label for="name" class="text-primary text-2xl">{{ 'FORM.NAME' | translate
                     }}</label>
                 <input #name="ngModel" name="name" [(ngModel)]="contactData.name" id="name" class="" type="text"
                     placeholder="{{ 'FORM.NAME_PLACEHOLDER' | translate }}" required>
