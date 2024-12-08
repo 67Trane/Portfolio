@@ -22,4 +22,9 @@ export class AppComponent {
     this.mouseX = event.clientX;  // X-Position relativ zum Fenster
     this.mouseY = event.clientY;  // Y-Position relativ zum Fenster
   }
+
+  
+  closeBurgerMenu() {
+    this.global.burgermenuIsOpen = false;
+  }
 }
