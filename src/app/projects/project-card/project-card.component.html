@@ -36,7 +36,7 @@
         <h3 class="text-lg text-primary font-fira pt-4 pb-4 md:text-4xl">{{ 'PROJECTCARD.TITLE' | translate}}</h3>
         <p class="pb-4 text-sm md:text-lg">{{projects[projectIndex].description | translate}}</p>
 
-        <div class="flex gap-6 pb-6 text-2xl">
+        <div class="flex gap-6 pb-6 text-2xl flex-wrap">
             <div *ngFor="let tool of matchingIcons" class="flex flex-row gap-4  ">
                 <div class="flex justify-center items-center gap-2 ">
                     <img class="size-6 filter-primary" src="assets/icons/skillset-icons/{{tool.file}}" alt="">
