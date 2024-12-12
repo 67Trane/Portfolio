@@ -46,8 +46,13 @@
                     class="absolute bg-primary w-1/2 h-full rounded-full transition-transform duration-300 left-0 peer-checked:translate-x-full">
                 </div>
 
-                <span class="z-10 font-bold text-white peer-checked:font-normal peer-checked:text-primary">Dark</span>
-                <span class="z-10 text-primary peer-checked:text-white peer-checked:font-bold ">Light</span>
+                <span
+                    class="z-10 w-10 font-bold text-white peer-checked:font-normal peer-checked:text-primary flex justify-center">
+                    <img class=" w-1/2 h-1/2" [src]="!global.themeMode? 'assets/icons/darkmode.svg': 'assets/icons/darkmode_blue.svg'" alt="">
+                </span>
+
+                <span class="z-10 w-10 text-primary peer-checked:text-white peer-checked:font-bold flex justify-center"><img
+                        class=" w-1/2 h-1/2" [src]="global.themeMode? 'assets/icons/lightmode.svg': 'assets/icons/lightmode_blue.svg'" alt=""></span>
             </label>
 
 
