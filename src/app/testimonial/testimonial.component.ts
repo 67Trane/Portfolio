@@ -44,6 +44,14 @@ export class TestimonialComponent {
 
   }
 
+  getFillColor(index: number): string {
+    if (this.global.themeMode) {
+      return index === this.currentIndex ? '#000000' : '#3DCFB6';
+    } else {
+      return index === this.currentIndex ? '#10B981' : '#FFFFFF';
+    }
+  }
+
   right() {
     if (this.currentIndex < this.testimonials.length - 1) {
       this.currentIndex++;

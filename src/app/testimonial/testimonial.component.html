@@ -35,7 +35,7 @@
 
 
         <svg *ngFor="let tesi of testimonials; let i = index" width="12" height="12" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg" [attr.fill]="i === currentIndex ? '#10B981' : '#FFFFFF'">
+            xmlns="http://www.w3.org/2000/svg" [attr.fill]="getFillColor(i)">
             <circle cx="12" cy="12" r="5" />
         </svg>
 
