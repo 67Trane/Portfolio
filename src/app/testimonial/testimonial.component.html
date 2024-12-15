@@ -10,7 +10,15 @@
         <div *ngFor="let tesi of testimonials; let i = index; let isFirst = first"
             class="border-primary border rounded-3xl h-full p-6 md:min-w-[50%]  min-w-[95%] bg-primary-opacity flex animation-speed flex-col justify-center items-center relative"
             [style.transform]="currentTranslate" [class.first-testi]="isFirst">
-            <img class="absolute top-0 -left-7" src="assets/icons/quotes.svg" alt="">
+
+
+            <svg class="absolute top-0 -left-7" width="67" height="48" viewBox="0 0 67 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M48.7246 48C45.6329 48 42.8889 47.1884 40.4928 45.5652C38.0966 43.942 36.2029 41.7391 34.8116 38.9565C33.4203 36.1739 32.7246 33.0821 32.7246 29.6812C32.7246 24.1159 34.5411 18.6667 38.1739 13.3333C41.8841 7.92271 47.1014 3.47827 53.8261 0L66.8116 6.95653C62.4058 9.12078 58.657 11.6329 55.5652 14.4928C52.5507 17.3527 50.5024 20.715 49.4203 24.5797C53.0531 24.8889 55.9903 26.0097 58.2319 27.942C60.5507 29.7971 61.7101 32.3865 61.7101 35.7101C61.7101 39.0338 60.5121 41.9324 58.1159 44.4058C55.7971 46.8019 52.6667 48 48.7246 48ZM16 48C12.9082 48 10.1643 47.1884 7.76812 45.5652C5.37198 43.942 3.47826 41.7391 2.08696 38.9565C0.695652 36.1739 0 33.0821 0 29.6812C0 24.1159 1.81643 18.6667 5.44928 13.3333C9.15942 7.92271 14.3768 3.47827 21.1015 0L34.087 6.95653C29.6812 9.12078 25.9324 11.6329 22.8406 14.4928C19.8261 17.3527 17.7778 20.715 16.6957 24.5797C20.3285 24.8889 23.2657 26.0097 25.5072 27.942C27.8261 29.7971 28.9855 32.3865 28.9855 35.7101C28.9855 39.0338 27.7874 41.9324 25.3913 44.4058C23.0725 46.8019 19.942 48 16 48Z"
+                    [attr.fill]="global.themeMode? 'rgb(25,189,139)' : 'white' " />
+            </svg>
+
             <p>{{ testimonials[i].text | translate }}</p>
             <div class="flex bottom-6 p-6 absolute w-full items-center gap-6">
                 <div class="h-px bg-white w-full"></div>
