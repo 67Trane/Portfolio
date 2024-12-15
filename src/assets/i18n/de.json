@@ -80,7 +80,7 @@
     "HELP": "Wie kann ich dir helfen?",
     "HELP_PLACEHOLDER": "Hallo Mehmet, ich bin interessiert an ...",
     "HELP_MISSING": "Bitte gib eine Nachricht ein",
-    
+
     "PRIVACY1": "Ich habe die ",
     "PRIVACY2": "Datenschutzerklärung ",
     "PRIVACY3": "gelesen und stimme der Verarbeitung meiner Daten gemäß der Richtlinien zu.",
@@ -94,5 +94,67 @@
     "REMOTE_WORK": "Verfügbar für Remote-Arbeit",
     "FRONTEND_DEVELOPER": "Frontend-Entwickler",
     "BASED_IN": "Ansässig in München"
-  }
+  },
+
+  "IMPRINT": {
+    "HEADER": "Impressum",
+    "ADDRESS_TITLE": "Angaben gemäß § 5 TMG",
+    "NAME": "Mehmet Deliaci",
+    "ADDRESS": "Nördliche Ringstr.23",
+    "CITY": "91781 Weißenburg",
+    "COUNTRY": "Deutschland",
+    "CONTACT_TITLE": "Kontakt",
+    "PHONE": "Telefon:",
+    "EMAIL": "E-Mail:",
+    "RESPONSIBILITY_TITLE": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+    "RESPONSIBILITY_NAME": "Mehmet Deliaci",
+    "RESPONSIBILITY_ADDRESS": "Nördliche Ringstr.23",
+    "RESPONSIBILITY_CITY": "91781 Weißenburg",
+    "RESPONSIBILITY_COUNTRY": "Deutschland",
+    "CONTENT_LIABILITY_TITLE": "Haftung für Inhalte",
+    "CONTENT_LIABILITY_TEXT1": "Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+    "CONTENT_LIABILITY_TEXT2": "Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.",
+    "LINKS_LIABILITY_TITLE": "Haftung für Links",
+    "LINKS_LIABILITY_TEXT1": "Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
+    "LINKS_LIABILITY_TEXT2": "Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.",
+    "COPYRIGHT_TITLE": "Urheberrecht",
+    "COPYRIGHT_TEXT1": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+    "COPYRIGHT_TEXT2": "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen."
+  },
+
+  
+    "PRIVACY": {
+      "HEADER": "Datenschutzerklärung",
+      "RESPONSIBLE_TITLE": "1. Verantwortliche Stelle",
+      "NAME": "Mehmet Deliaci",
+      "ADDRESS": "Nördliche Ringstr.23",
+      "CITY": "91781 Weißenburg",
+      "COUNTRY": "Deutschland",
+      "EMAIL": "E-Mail",
+      "DATA_COLLECTION_TITLE": "2. Erhebung und Speicherung personenbezogener Daten",
+      "DATA_COLLECTION_TEXT": "Wenn Sie über das Kontaktformular eine Nachricht an mich senden, werden die folgenden Daten verarbeitet:",
+      "DATA_NAME": "Ihr Name",
+      "DATA_EMAIL": "Ihre E-Mail-Adresse",
+      "DATA_MESSAGE": "Ihre Nachricht",
+      "DATA_USAGE_TEXT": "Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Eine Weitergabe an Dritte erfolgt nicht.",
+      "LEGAL_BASIS_TITLE": "3. Rechtsgrundlage der Verarbeitung",
+      "LEGAL_BASIS_TEXT": "Die Verarbeitung Ihrer Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen).",
+      "STORAGE_DURATION_TITLE": "4. Speicherdauer",
+      "STORAGE_DURATION_TEXT": "Ihre Daten werden so lange gespeichert, wie es für die Bearbeitung Ihrer Anfrage notwendig ist. Nach Abschluss der Anfrage werden Ihre Daten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.",
+      "YOUR_RIGHTS_TITLE": "5. Ihre Rechte",
+      "YOUR_RIGHTS_TEXT": "Sie haben folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:",
+      "RIGHT_ACCESS": "Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)",
+      "RIGHT_CORRECTION": "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+      "RIGHT_DELETION": "Löschung Ihrer Daten (Art. 17 DSGVO)",
+      "RIGHT_LIMITATION": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+      "RIGHT_OBJECTION": "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+      "RIGHT_TRANSFERABILITY": "Übertragbarkeit Ihrer Daten (Art. 20 DSGVO)",
+      "RIGHTS_CONTACT_TEXT": "Zur Ausübung Ihrer Rechte können Sie sich an die oben genannte E-Mail-Adresse wenden.",
+      "CONSENT_TITLE": "6. Einwilligung",
+      "CONSENT_TEXT": "Durch das Absenden einer Nachricht über das Kontaktformular erklären Sie sich mit der Verarbeitung Ihrer Daten gemäß dieser Datenschutzerklärung einverstanden.",
+      "CHANGES_TITLE": "7. Änderung der Datenschutzerklärung",
+      "CHANGES_TEXT": "Ich behalte mir das Recht vor, diese Datenschutzerklärung bei Änderungen der Rechtslage oder der Datenverarbeitung entsprechend anzupassen."
+    }
+  
+  
 }
