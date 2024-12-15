@@ -52,6 +52,8 @@ export class TestimonialComponent {
     }
   }
 
+  
+
   right() {
     if (this.currentIndex < this.testimonials.length - 1) {
       this.currentIndex++;
