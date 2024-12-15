@@ -1,4 +1,4 @@
-<section class="bg-no-repeat bg-cover bg-left pt-32 pb-32"
+<section class="bg-no-repeat bg-cover bg-left pt-32"
     [ngClass]="global.themeMode ? 'bg-skillsetLight':'bg-skillset' ">
     <div class="p-6 pt-40 pb-40  2xl:w-[1580px] m-auto md:flex ">
         <div>
@@ -22,9 +22,9 @@
 
 
         <div
-            class="flex w-full flex-wrap gap-14 items-center justify-center p-6 pb-14 md:gap-20 relative overflow-hidden md:pr-24">
+            class="flex w-full flex-wrap gap-20 items-center justify-center p-6 pb-14 md:gap-20 relative overflow-hidden md:pr-24">
             <div *ngFor="let icon of iconFiles; let isLast = last"
-                class="flex flex-col items-center size-16 gap-2 cursor-pointer" (mouseover)="hoverPopUp(icon.name)"
+                class="flex flex-col items-center size-16 gap-2 cursor-pointer text-center" (mouseover)="hoverPopUp(icon.name)"
                 (mouseleave)="closePopUp()">
                 <app-popup *ngIf="isLast && isHovered" class="flex -translate-y-52 absolute"></app-popup>
                 @defer (on viewport) {
