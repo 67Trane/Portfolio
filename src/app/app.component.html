@@ -2,7 +2,7 @@
     <app-header [ngClass]="global.themeMode ?  'text-lightprimary' : 'text-white'"
         class="absolute top-0 w-full background-gradiant h-32 z-30"></app-header>
 
-    <!-- background if a model or pop got open (for example burgermenu) -->
+    <!-- background if a model or popup got open (for example burgermenu) -->
     <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-20" [hidden]="!global.burgermenuIsOpen"
         (click)="closeBurgerMenu()">
     </div>

@@ -1,5 +1,6 @@
-<div class="bg-secondary pt-32 pb-32">
-  <div class="privacy-policy max-w-4xl mx-auto p-6 bg-black text-white rounded-lg shadow-lg">
+<div [ngClass]="global.themeMode? 'bg-white' : 'bg-secondary'" class="pt-32 pb-32">
+  <div [ngClass]="global.themeMode? 'text-primary bg-gray-600' : 'text-white bg-black'"
+    class="privacy-policy max-w-4xl mx-auto p-6  rounded-lg shadow-lg">
     <h1 class="text-3xl font-bold text-primary mb-6">{{ 'PRIVACY.HEADER' | translate }}</h1>
 
     <h2 class="text-2xl font-semibold mb-4">{{ 'PRIVACY.RESPONSIBLE_TITLE' | translate }}</h2>

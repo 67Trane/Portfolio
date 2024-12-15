@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { GlobalService } from '../services/global.service';
 
 @Component({
   selector: 'app-impressum',
@@ -10,4 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ImpressumComponent {
 
+  constructor(public global: GlobalService) {
+    
+  }
 }
