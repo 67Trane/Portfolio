@@ -14,7 +14,7 @@ export class FooterComponent {
   constructor(private router: Router) {}
 
   navigateAndScroll() {
-    this.router.navigate(['/privacy-policy']).then(() => {
+    this.router.navigate(['/impressum']).then(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }

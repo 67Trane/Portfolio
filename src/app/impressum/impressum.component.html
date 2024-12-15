@@ -1,5 +1,6 @@
-<div class="bg-blue-500 pt-32 pb-32 h-full">
-  <div class="max-w-4xl mx-auto p-6 bg-secondary text-white rounded-lg shadow-lg">
+<div [ngClass]="global.themeMode? 'bg-white' : 'bg-secondary'" class="pt-32 pb-32 h-full">
+  <div [ngClass]="global.themeMode? 'text-primary bg-gray-600' : 'text-white bg-black'"
+    class="max-w-4xl mx-auto p-6 rounded-lg shadow-lg">
     <h1 class="text-3xl font-bold text-primary mb-6">{{ 'IMPRINT.HEADER' | translate }}</h1>
 
     <h2 class="text-2xl font-semibold mb-4">{{ 'IMPRINT.ADDRESS_TITLE' | translate }}</h2>
