@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,5 +10,13 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+
+  constructor(private router: Router) {}
+
+  navigateAndScroll() {
+    this.router.navigate(['/privacy-policy']).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
 }

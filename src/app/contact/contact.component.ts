@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -13,7 +13,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  contactname:string = "";
+
+  constructor(private router: Router) { }
+
+  contactname: string = "";
 
   http = inject(HttpClient);
 
@@ -54,7 +57,7 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'), 
+          complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
@@ -71,5 +74,11 @@ export class ContactComponent {
 
   closeMessage() {
     this.isMessageSent = false;
+  }
+
+  navigateAndScroll() {
+    this.router.navigate(['/privacy-policy']).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 }
