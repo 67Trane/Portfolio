@@ -1,10 +1,14 @@
 <section class="p-6 pb-24 md:flex 2xl:w-[1580px] 2xl:m-auto">
-    <div class="fixed right-[25%] left-[25%] bg-primary text-white p-4 rounded-lg shadow-lg transition-all duration-500 ease-in-out transform"
-        [ngClass]="{ 'translate-x-0 top-[50%] opacity-100 ': isMessageSent, 'translate-x-[-20%] -left-10 opacity-0 ': !isMessageSent }">
-        <p>Danke, {{ contactname }} Ihre Nachricht wurde erfolgreich übermittelt.<br>Ich werde mich in Kürze mit
+
+    <!-- CONFIRM MESSAGE -->
+    <div class="fixed top-[50%] left-[50%] bg-primary text-white p-4 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform -translate-x-1/2 -translate-y-1/2"
+        [ngClass]="{ 'opacity-100 ': isMessageSent, 'opacity-0 ': !isMessageSent }">
+        <p class="text-center">Danke, {{ contactname }} Ihre Nachricht wurde erfolgreich übermittelt.<br>Ich werde mich
+            in Kürze mit
             Ihnen in Verbindung setzen.</p>
         <button (click)="closeMessage()" class="absolute top-1 right-2 text-white">✖</button>
     </div>
+
 
 
 

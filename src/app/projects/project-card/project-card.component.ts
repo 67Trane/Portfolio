@@ -53,11 +53,11 @@ export class ProjectCardComponent implements OnInit {
 
   navigateToProject() {
     let projectname = this.projects[this.projectIndex].name.toLowerCase().split("(")
-    window.open(`https://mehmet-deliaci.net/${projectname[0]}`, '_self');
+    window.open(`https://mehmet-deliaci.net/${projectname[0]}`, '_target');
   }
 
   openGithub() {
     let githublink = this.projects[this.projectIndex].github
-    window.open(`${githublink}`, '_self');
+    window.open(`${githublink}`, '_target');
   }
 }
