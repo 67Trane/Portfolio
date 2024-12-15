@@ -32,12 +32,12 @@ export class ProjectsComponent implements OnInit {
       "description": "PROJECTCARD.NIGHTSTALKER.INFO",
       "github": "https://github.com/67Trane/nightstalker",
     },
-    {
-      "name": "DA Bubble",
-      "tools": ["Angular", "Firebase", "TypeScript"],
-      "picture": "assets/imgs/da-bubble.jpeg",
-      "description": "PROJECTCARD.DABUBBLE.INFO",
-    },
+    // {
+    //   "name": "DA Bubble",
+    //   "tools": ["Angular", "Firebase", "TypeScript"],
+    //   "picture": "assets/imgs/da-bubble.jpeg",
+    //   "description": "PROJECTCARD.DABUBBLE.INFO",
+    // },
   ]
 
 
