@@ -30,29 +30,13 @@ export class AppComponent {
 
 
   ngOnInit(): void {
-    this.loadTheme()
+    this.loadData()
   }
 
 
-
-  loadTheme() {
-    let theme = localStorage.getItem('theme')
-    let lang = localStorage.getItem('lang')
-
-    if (lang == 'true') {
-      this.global.languageDe = true
-      console.log(this.global.languageDe, 'yes')
-    } else {
-      this.global.languageDe = false
-      console.log(this.global.languageDe, 'no')
-    }
-
-    if (theme == 'true') {
-      this.global.themeMode = true
-
-    } else {
-      this.global.themeMode = false
-
-    }
+  loadData() {
+    this.global.languageDe = localStorage.getItem('lang') === 'true' || false; // Standardwert: false
+    this.global.themeMode = localStorage.getItem('theme') === 'true' || false; // Standardwert: false
   }
+  
 }
