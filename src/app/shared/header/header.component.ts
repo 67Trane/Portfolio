@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { GlobalService } from '../../services/global.service';
@@ -11,7 +11,7 @@ import { BurgermenuComponent } from './burgermenu/burgermenu.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
   constructor(private translate: TranslateService, public global: GlobalService) {
 
@@ -22,6 +22,14 @@ export class HeaderComponent {
   burgerMenu: boolean = false;
   lang = 'en'
   hovered: boolean = false
+
+  ngOnInit(): void {
+    if (this.global.languageDe) {
+      this.switchLanguage('de')
+    } else {
+      this.switchLanguage('en')
+    }
+  }
 
 
   switchLanguage(lang: string) {
@@ -59,6 +67,7 @@ export class HeaderComponent {
       this.lang = 'en'
     }
     this.switchLanguage(this.lang)
+    this.saveLanguage()
   }
 
   switchTheme(event: Event) {
@@ -73,6 +82,10 @@ export class HeaderComponent {
 
   hoverOff() {
     this.hovered = false
+  }
+
+  saveLanguage() {
+    localStorage.setItem('lang', this.global.languageDe.toString())
   }
 
   saveTheme() {

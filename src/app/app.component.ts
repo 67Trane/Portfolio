@@ -16,14 +16,14 @@ import { GlobalService } from './services/global.service';
 export class AppComponent {
   mouseX: number = 0;
   mouseY: number = 0;
-  constructor(public global: GlobalService) {}
+  constructor(public global: GlobalService) { }
 
   onMouseMove(event: MouseEvent) {
     this.mouseX = event.clientX;  // X-Position relativ zum Fenster
     this.mouseY = event.clientY;  // Y-Position relativ zum Fenster
   }
 
-  
+
   closeBurgerMenu() {
     this.global.burgermenuIsOpen = false;
   }
@@ -33,17 +33,26 @@ export class AppComponent {
     this.loadTheme()
   }
 
- 
+
 
   loadTheme() {
     let theme = localStorage.getItem('theme')
-    console.log(theme, 'here')
+    let lang = localStorage.getItem('lang')
+
+    if (lang == 'true') {
+      this.global.languageDe = true
+      console.log(this.global.languageDe, 'yes')
+    } else {
+      this.global.languageDe = false
+      console.log(this.global.languageDe, 'no')
+    }
+
     if (theme == 'true') {
       this.global.themeMode = true
-      console.log("yes")
+
     } else {
       this.global.themeMode = false
-      console.log("not")
+
     }
   }
 }
