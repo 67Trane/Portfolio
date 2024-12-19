@@ -1,5 +1,5 @@
-<section
-    class="text-center bg-white rounded-3xl text-primary p-6 text-wrap w-56 flex flex-col justify-center items-center">
+<section [ngClass]="global.themeMode?  'bg-gray-600':'bg-white'"
+    class="text-center rounded-3xl text-primary p-6 text-wrap w-56 flex flex-col justify-center items-center">
     <span class=""> {{ 'POPUP.INFO' | translate }}</span>
 
     <div class="flex gap-4 p-4">
@@ -14,5 +14,6 @@
         </div>
     </div>
 
-    <div class="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rotate-45 "></div>
+    <div [ngClass]="global.themeMode?  'bg-gray-600':'bg-white'"
+        class="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-4 h-4  rotate-45 "></div>
 </section>

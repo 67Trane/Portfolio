@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-popup',
@@ -11,6 +12,10 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class PopupComponent {
   isPopupVisible: boolean = false;
+
+
+  constructor(public global:GlobalService) {
+  }
 
   togglePopup() {
     this.isPopupVisible = !this.isPopupVisible;
