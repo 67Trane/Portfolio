@@ -1,10 +1,10 @@
 <section class="bg-no-repeat bg-cover bg-left pt-32 max-w-[1580px] m-auto"
     [ngClass]="global.themeMode ? 'bg-skillsetLight':'bg-skillset' ">
-    <div class="p-6 pt-40 pb-40 m-auto md:flex ">
+    <div class="p-6 pt-40 pb-40 m-auto lg:flex ">
         <div>
-            <h2 id="skillset" class="text-primary pb-6 md:text-2xl ">{{ 'SKILLSET.TITLE' | translate}}</h2>
+            <h2 id="skillset" class="text-primary pb-6 lg:text-2xl ">{{ 'SKILLSET.TITLE' | translate}}</h2>
             <div class="border-primary border rounded-3xl p-10 bg-primary bg-opacity-5 backdrop-blur-md">
-                <h1 class="text-primary md:text-6xl font-bold pb-6 font-fira break-words text-4xl">{{ 'SKILLSET.HEADER'
+                <h1 class="text-primary lg:text-6xl font-bold pb-6 font-fira break-words text-4xl">{{ 'SKILLSET.HEADER'
                     | translate}}</h1>
                 <p>{{ 'SKILLSET.INFO' | translate}}</p>
 
@@ -20,7 +20,7 @@
 
 
         <div
-            class="flex w-full flex-wrap gap-20 items-center justify-center p-6 pb-14 md:gap-20 relative overflow-hidden md:pr-24">
+            class="flex w-full flex-wrap gap-20 items-center justify-center p-6 pb-14 lg:gap-20 relative overflow-hidden lg:pr-24">
             <div *ngFor="let icon of iconFiles; let isLast = last"
                 class="flex flex-col items-center size-16 gap-2 cursor-pointer text-center"
                 (mouseover)="hoverPopUp(icon.name)" (mouseleave)="closePopUp()">
