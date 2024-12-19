@@ -1,4 +1,4 @@
-<section class="bg-no-repeat bg-cover bg-left pt-32"
+<section class="bg-no-repeat bg-cover bg-left pt-32 max-w-[1580px] m-auto"
     [ngClass]="global.themeMode ? 'bg-skillsetLight':'bg-skillset' ">
     <div class="p-6 pt-40 pb-40 m-auto md:flex ">
         <div>
@@ -11,7 +11,6 @@
                 <h2 class="flex gap-1 pt-6 pb-6 text-2xl">{{ 'SKILLSET.SECONDTITLEPT1' | translate}}<p
                         class="text-primary text-2xl">{{ 'SKILLSET.SECONDTITLEPT2' | translate}}</p>
                 </h2>
-
                 <p class="pb-6">{{ 'SKILLSET.MORE' | translate}}</p>
 
                 <button class="rounded-full border-white border p-4 px-7">{{ 'SKILLSET.TALK' | translate}}</button>
@@ -20,16 +19,14 @@
 
 
 
-
         <div
             class="flex w-full flex-wrap gap-20 items-center justify-center p-6 pb-14 md:gap-20 relative overflow-hidden md:pr-24">
             <div *ngFor="let icon of iconFiles; let isLast = last"
-                class="flex flex-col items-center size-16 gap-2 cursor-pointer text-center" (mouseover)="hoverPopUp(icon.name)"
-                (mouseleave)="closePopUp()">
+                class="flex flex-col items-center size-16 gap-2 cursor-pointer text-center"
+                (mouseover)="hoverPopUp(icon.name)" (mouseleave)="closePopUp()">
                 <app-popup *ngIf="isLast && isHovered" class="flex -translate-y-52 absolute"></app-popup>
                 @defer (on viewport) {
-                <img class="size-16 hover:scale-110 transition-all ease-in duration-100" 
-                    [src]="getIconPath(icon)"
+                <img class="size-16 hover:scale-110 transition-all ease-in duration-100" [src]="getIconPath(icon)"
                     [alt]="icon.name">
                 <p class="font-fira">{{icon.name}}</p>
                 } @placeholder {
