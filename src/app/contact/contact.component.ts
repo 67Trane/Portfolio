@@ -4,6 +4,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { GlobalService } from '../services/global.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +15,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ContactComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public global: GlobalService) { }
 
   contactname: string = "";
 
