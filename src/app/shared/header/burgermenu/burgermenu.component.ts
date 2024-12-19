@@ -34,8 +34,13 @@ export class BurgermenuComponent {
     } else {
       this.global.themeMode = true
     }
+    this.saveTheme()
   }
 
+  saveTheme() {
+    localStorage.setItem('theme', this.global.themeMode.toString())
+  }
+  
   onCheckboxChange(event: Event): void {
     this.isChecked = (event.target as HTMLInputElement).checked;
     if (this.isChecked) {
