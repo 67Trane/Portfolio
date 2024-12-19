@@ -35,8 +35,8 @@ export class AppComponent {
 
 
   loadData() {
-    this.global.languageDe = localStorage.getItem('lang') === 'true' || false; // Standardwert: false
-    this.global.themeMode = localStorage.getItem('theme') === 'true' || false; // Standardwert: false
+    this.global.languageDe = localStorage.getItem('lang') === 'true' || false;
+    this.global.themeMode = localStorage.getItem('theme') === 'true' || false;
   }
   
 }
