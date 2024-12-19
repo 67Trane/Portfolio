@@ -27,4 +27,23 @@ export class AppComponent {
   closeBurgerMenu() {
     this.global.burgermenuIsOpen = false;
   }
+
+
+  ngOnInit(): void {
+    this.loadTheme()
+  }
+
+ 
+
+  loadTheme() {
+    let theme = localStorage.getItem('theme')
+    console.log(theme, 'here')
+    if (theme == 'true') {
+      this.global.themeMode = true
+      console.log("yes")
+    } else {
+      this.global.themeMode = false
+      console.log("not")
+    }
+  }
 }

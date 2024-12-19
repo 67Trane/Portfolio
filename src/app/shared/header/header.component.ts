@@ -68,10 +68,15 @@ export class HeaderComponent {
     } else {
       this.global.themeMode = false
     }
+    this.saveTheme()
   }
 
   hoverOff() {
     this.hovered = false
+  }
+
+  saveTheme() {
+    localStorage.setItem('theme', this.global.themeMode.toString())
   }
 
 }

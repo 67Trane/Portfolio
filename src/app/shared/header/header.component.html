@@ -40,7 +40,7 @@
 
             <label
                 class="hidden md:flex border border-primary rounded-full gap-4 items-center px-2 h-6 relative cursor-pointer">
-                <input type="checkbox" class="sr-only peer" [checked]="modeChecked" (change)="switchTheme($event)" />
+                <input type="checkbox" class="sr-only peer" [checked]="global.themeMode" (change)="switchTheme($event)" />
 
                 <div
                     class="absolute bg-primary w-1/2 h-full rounded-full transition-transform duration-300 left-0 peer-checked:translate-x-full">
