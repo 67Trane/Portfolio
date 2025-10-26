@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class SkillsetService {
-  
+
 
 
   iconFiles = [
@@ -19,6 +19,17 @@ export class SkillsetService {
     { name: "Scrum", file: "scrum.svg" },
     { name: "TypeScript", file: "typescript.svg" },
     { name: "Python", file: "python.svg" },
+    { name: "Django", file: "django.svg" },
+    { name: "JWT", file: "jwt.svg" },
+    { name: "PostgresSQL", file: "postgresql.svg" },
+    { name: "Docker", file: "docker.svg" },
+    { name: "Debian", file: "debian.svg" },
+    { name: "Gunicorn", file: "gunicorn.svg" },
+    { name: "Linux", file: "linux.svg" },
+    { name: "Nginx", file: "nginx.svg" },
+    { name: "Rasppery Pi", file: "raspi.svg" },
+    { name: "Redis", file: "redis.svg" },
+    { name: "SQLite", file: "sqlite.svg" },
     { name: "Growth Mindset", file: "growthmindset.svg" }, // Caution! Growth has to be the last one
   ];
 
