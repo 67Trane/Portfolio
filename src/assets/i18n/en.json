@@ -12,7 +12,7 @@
   "ABOUTME": {
     "WHO": "Who I Am",
     "ME": "About me",
-    "TITLE": "Hi, I am a German-Turkish frontend developer near Nuremberg with a passion for IT and creative design.",
+    "TITLE": "Hi, I am a German-Turkish full-stack developer near Nuremberg with a passion for IT and creative design.",
     "FLEX": "I am flexible and happy to work both in the office and remotely.",
     "MIND": "I am open to new experiences and excited to take on challenging opportunities.",
     "CHECK": "For me, programming is not just about writing lines of code but about creating innovative solutions that inspire.",
@@ -91,7 +91,7 @@
   "MARQUEE": {
     "REMOTE_WORK": "Available for remote work",
     "FRONTEND_DEVELOPER": "Frontend Developer",
-    "BASED_IN": "Based in Munich"
+    "BASED_IN": "Based in near Nürnberg"
   },
 
   "IMPRINT": {

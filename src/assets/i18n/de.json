@@ -12,7 +12,7 @@
   "ABOUTME": {
     "WHO": "Wer ich bin",
     "ME": "Über mich",
-    "TITLE": "Hi, ich bin ein deutsch-türkischer Frontend-Entwickler aus der Nähe von Nürnberg mit einer Leidenschaft für IT und kreatives Design.",
+    "TITLE": "Hi, ich bin ein deutsch-türkischer Full-Stack-Entwickler aus der Nähe von Nürnberg mit einer Leidenschaft für IT und kreatives Design.",
     "FLEX": "Ich bin flexibel und arbeite gerne sowohl im Büro als auch im Homeoffice.",
     "MIND": "Ich bin offen für neue Erfahrungen und freue mich darauf, spannende Herausforderungen anzunehmen.",
     "CHECK": "Für mich bedeutet Programmieren nicht nur Code zu schreiben, sondern kreative Lösungen zu entwickeln, die begeistern.",
@@ -93,7 +93,7 @@
   "MARQUEE": {
     "REMOTE_WORK": "Verfügbar für Remote-Arbeit",
     "FRONTEND_DEVELOPER": "Frontend-Entwickler",
-    "BASED_IN": "Ansässig in München"
+    "BASED_IN": "Ansässig in der nähe Nürnberg"
   },
 
   "IMPRINT": {
