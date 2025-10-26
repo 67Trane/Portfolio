@@ -2,7 +2,7 @@
   "HEADER": {
     "PROJECTS": "Projekte",
     "CONTACT": "Mich kontaktieren",
-    "TITLE": "Frontend-Entwickler",
+    "TITLE": "Full-Stack-Entwickler",
     "ABOUT": "Über mich",
     "SKILLS": "Fähigkeiten",
     "PROJECT": "Projekte",
@@ -21,7 +21,7 @@
   "SKILLSET": {
     "TITLE": "Technologien",
     "HEADER": "Fähigkeiten",
-    "INFO": "Im Laufe meiner Reise habe ich an diversen Projekten gearbeitet und eine Vielzahl von Frontend-Technologien und -Konzepten angewendet. Ich bin stets motiviert, neue Werkzeuge und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung vorne mitzuspielen.",
+    "INFO": "Im Laufe meiner Reise habe ich an diversen Projekten gearbeitet und eine Vielzahl von Frontend und Backend - Technologien und -Konzepten angewendet. Ich bin stets motiviert, neue Werkzeuge und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung vorne mitzuspielen.",
     "SECONDTITLEPT1": "Brauchen Sie",
     "SECONDTITLEPT2": "eine andere Fähigkeit?",
     "MORE": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen zu erweitern und neue Herausforderungen anzunehmen.",
@@ -67,7 +67,7 @@
     "TITLE": "Lass uns zusammenarbeiten",
     "STITLE": "Hast du ein Problem zu lösen?",
     "TEXT": "Kontaktiere mich über dieses Formular. Ich freue mich darauf, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.",
-    "NEED": "Brauchst du einen Frontend-Entwickler?",
+    "NEED": "Brauchst du einen Full-Stack-Entwickler?",
     "TALK": "Lass uns sprechen!"
   },
   "FORM": {
@@ -92,7 +92,7 @@
 
   "MARQUEE": {
     "REMOTE_WORK": "Verfügbar für Remote-Arbeit",
-    "FRONTEND_DEVELOPER": "Frontend-Entwickler",
+    "FRONTEND_DEVELOPER": "Full-Stack-Entwickler",
     "BASED_IN": "Ansässig in der nähe Nürnberg"
   },
 

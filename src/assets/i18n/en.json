@@ -2,7 +2,7 @@
   "HEADER": {
     "PROJECTS": "My Projects",
     "CONTACT": "Contact Me",
-    "TITLE": "Frontend Developer",
+    "TITLE": "Full-Stack Developer",
     "ABOUT": "About Me",
     "SKILLS": "Skills",
     "PROJECT": "Projects",
@@ -21,7 +21,7 @@
   "SKILLSET": {
     "TITLE": "Technologies",
     "HEADER": "Skill Set",
-    "INFO": "Throughout my journey, I have worked on diverse projects, utilizing a wide range of frontend technologies and concepts. I am always eager to embrace new tools and methodologies, continuously improving my skills to stay ahead in the ever-evolving world of web development.",
+    "INFO": "Throughout my journey, I have worked on diverse projects, utilizing a wide range of frontend and backend technologies and concepts. I am always eager to embrace new tools and methodologies, continuously improving my skills to stay ahead in the ever-evolving world of web development.",
     "SECONDTITLEPT1": "Do you need",
     "SECONDTITLEPT2": "another skill?",
     "MORE": "Feel free to reach out. I’m always excited to broaden my expertise and take on new challenges.",
@@ -67,7 +67,7 @@
     "TITLE": "Let's Work Together",
     "STITLE": "Got a Problem to Solve?",
     "TEXT": "Contact me through this form. I am interested in hearing from you, learning about your ideas, and contributing to your projects with my work.",
-    "NEED": "Need a Frontend Developer?",
+    "NEED": "Need a Full-stack Developer?",
     "TALK": "Let's Talk!"
   },
   "FORM": {
@@ -90,7 +90,7 @@
 
   "MARQUEE": {
     "REMOTE_WORK": "Available for remote work",
-    "FRONTEND_DEVELOPER": "Frontend Developer",
+    "FRONTEND_DEVELOPER": "Full-Stack Developer",
     "BASED_IN": "Based in near Nürnberg"
   },
 
