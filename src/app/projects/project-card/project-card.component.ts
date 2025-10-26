@@ -40,7 +40,7 @@ export class ProjectCardComponent implements OnInit {
     this.findMatchingIcons()
   }
 
-  findMatchingIcons(){
+  findMatchingIcons() {
     this.matchingIcons = this.projects[this.projectIndex].tools.map((tool: any) =>
       this.iconFiles.find((icon) => icon.name.toLowerCase() === tool.toLowerCase())
     );
@@ -52,8 +52,12 @@ export class ProjectCardComponent implements OnInit {
   }
 
   navigateToProject() {
-    let projectname = this.projects[this.projectIndex].name.toLowerCase().split("(")
-    window.open(`https://mehmet-deliaci.net/${projectname[0]}`, '_target');
+    let projectname = this.projects[this.projectIndex].name
+      .toLowerCase()
+      .split("(")[0]            // Klammern entfernen
+      .trim()                   // Leerzeichen am Anfang/Ende entfernen
+      .replace(/\s+/g, "-");    // Alle Leerzeichen durch "-" ersetzen
+    window.open(`https://mehmet-deliaci.net/${projectname}`, "_blank");
   }
 
   openGithub() {

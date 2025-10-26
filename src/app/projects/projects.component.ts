@@ -17,6 +17,10 @@ export class ProjectsComponent implements OnInit {
   ismobile: boolean = false;
   isOpenPorject: boolean = false;
 
+
+  // Für den "Live Tester" muss der Projektname exakt der URL-Endung entsprechen.
+  // Beispiel: name = "Da Bubble" → URL = .../da-bubble (Leerzeichen werden automatisch durch "-" ersetzt)
+
   projects = [
     {
       "name": "Join",
@@ -32,12 +36,13 @@ export class ProjectsComponent implements OnInit {
       "description": "PROJECTCARD.NIGHTSTALKER.INFO",
       "github": "https://github.com/67Trane/nightstalker",
     },
-    // {
-    //   "name": "DA Bubble",
-    //   "tools": ["Angular", "Firebase", "TypeScript"],
-    //   "picture": "assets/imgs/da-bubble.jpeg",
-    //   "description": "PROJECTCARD.DABUBBLE.INFO",
-    // },
+    {
+      "name": "DA Bubble",
+      "tools": ["Angular", "Firebase", "TypeScript"],
+      "picture": "assets/imgs/da-bubble.jpeg",
+      "description": "PROJECTCARD.DABUBBLE.INFO",
+      "github": "https://github.com/67Trane/DABubble",
+    },
   ]
 
 
