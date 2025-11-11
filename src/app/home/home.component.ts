@@ -10,13 +10,14 @@ import { ProjectsComponent } from '../projects/projects.component';
 import { TestimonialComponent } from '../testimonial/testimonial.component';
 import { ContactComponent } from '../contact/contact.component';
 import { GlobalService } from '../services/global.service';
+import {ScrollRevealDirective } from '../shared/directives/scroll-reveal.directive'
 
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TranslateModule, CommonModule, HeroComponent, AboutMeComponent, SkillsetComponent, ProjectsComponent, TestimonialComponent, ContactComponent],
+  imports: [TranslateModule, CommonModule, HeroComponent, AboutMeComponent, SkillsetComponent, ProjectsComponent, TestimonialComponent, ContactComponent, ScrollRevealDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

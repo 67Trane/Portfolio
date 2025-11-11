@@ -1,10 +1,9 @@
+.dark-mode {
+  color: white;
+  @apply bg-secondary;
+}
 
-  .dark-mode {
-    color: white;
-    @apply bg-secondary
-  }
-
-  .light-mode {
-    @apply text-lightprimary;
-    @apply bg-lightsecondary;
-  }
+.light-mode {
+  @apply text-lightprimary;
+  @apply bg-lightsecondary;
+}
