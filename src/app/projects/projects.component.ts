@@ -45,7 +45,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       "name": "Coderr",
-      "tools": ["Django", "Python", "Gunicorn"],
+      "tools": ["Django", "Python", "SQLite"],
       "picture": "assets/imgs/coderr-page.png",
       "description": "PROJECTCARD.CODERR.INFO",
       "github": "https://github.com/67Trane/coderr.git",
