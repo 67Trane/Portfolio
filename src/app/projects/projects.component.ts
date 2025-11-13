@@ -43,6 +43,13 @@ export class ProjectsComponent implements OnInit {
       "description": "PROJECTCARD.DABUBBLE.INFO",
       "github": "https://github.com/67Trane/DABubble",
     },
+    {
+      "name": "Coderr",
+      "tools": ["Django", "Python", "Gunicorn"],
+      "picture": "assets/imgs/coderr-page.png",
+      "description": "PROJECTCARD.CODERR.INFO",
+      "github": "https://github.com/67Trane/coderr.git",
+    },
   ]
 
 

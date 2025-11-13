@@ -45,6 +45,9 @@
     },
     "DABUBBLE": {
       "INFO": "This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    },
+    "CODERR": {
+      "INFO": "Coderr is a role-based platform powered by a Django/DRF backend. Customers and providers get tailored features and API endpoints based on their account type. Profiles, offers, and orders are fully managed by the backend."
     }
   },
   "TESTIMONIALS": {
