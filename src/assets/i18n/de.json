@@ -66,12 +66,12 @@
     }
   },
   "CONTACT": {
-    "HEADER": "Kontaktiere mich",
-    "TITLE": "Lass uns zusammenarbeiten",
-    "STITLE": "Hast du ein Problem zu lösen?",
-    "TEXT": "Kontaktiere mich über dieses Formular. Ich freue mich darauf, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.",
-    "NEED": "Brauchst du einen Full-Stack-Entwickler?",
-    "TALK": "Lass uns sprechen!"
+    "HEADER": "Kontaktieren Sie mich",
+    "TITLE": "Lassen Sie uns zusammenarbeiten",
+    "STITLE": "Haben Sie ein Problem zu lösen?",
+    "TEXT": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "NEED": "Brauchen Sie einen Full-Stack-Entwickler?",
+    "TALK": "Lassen Sie uns sprechen!"
   },
   "FORM": {
     "NAME": "Wie lautet dein Name?",
@@ -125,39 +125,36 @@
     "COPYRIGHT_TEXT2": "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen."
   },
 
-  
-    "PRIVACY": {
-      "HEADER": "Datenschutzerklärung",
-      "RESPONSIBLE_TITLE": "1. Verantwortliche Stelle",
-      "NAME": "Mehmet Deliaci",
-      "ADDRESS": "Nördliche Ringstr.23",
-      "CITY": "91781 Weißenburg",
-      "COUNTRY": "Deutschland",
-      "EMAIL": "E-Mail",
-      "DATA_COLLECTION_TITLE": "2. Erhebung und Speicherung personenbezogener Daten",
-      "DATA_COLLECTION_TEXT": "Wenn Sie über das Kontaktformular eine Nachricht an mich senden, werden die folgenden Daten verarbeitet:",
-      "DATA_NAME": "Ihr Name",
-      "DATA_EMAIL": "Ihre E-Mail-Adresse",
-      "DATA_MESSAGE": "Ihre Nachricht",
-      "DATA_USAGE_TEXT": "Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Eine Weitergabe an Dritte erfolgt nicht.",
-      "LEGAL_BASIS_TITLE": "3. Rechtsgrundlage der Verarbeitung",
-      "LEGAL_BASIS_TEXT": "Die Verarbeitung Ihrer Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen).",
-      "STORAGE_DURATION_TITLE": "4. Speicherdauer",
-      "STORAGE_DURATION_TEXT": "Ihre Daten werden so lange gespeichert, wie es für die Bearbeitung Ihrer Anfrage notwendig ist. Nach Abschluss der Anfrage werden Ihre Daten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.",
-      "YOUR_RIGHTS_TITLE": "5. Ihre Rechte",
-      "YOUR_RIGHTS_TEXT": "Sie haben folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:",
-      "RIGHT_ACCESS": "Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)",
-      "RIGHT_CORRECTION": "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
-      "RIGHT_DELETION": "Löschung Ihrer Daten (Art. 17 DSGVO)",
-      "RIGHT_LIMITATION": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
-      "RIGHT_OBJECTION": "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
-      "RIGHT_TRANSFERABILITY": "Übertragbarkeit Ihrer Daten (Art. 20 DSGVO)",
-      "RIGHTS_CONTACT_TEXT": "Zur Ausübung Ihrer Rechte können Sie sich an die oben genannte E-Mail-Adresse wenden.",
-      "CONSENT_TITLE": "6. Einwilligung",
-      "CONSENT_TEXT": "Durch das Absenden einer Nachricht über das Kontaktformular erklären Sie sich mit der Verarbeitung Ihrer Daten gemäß dieser Datenschutzerklärung einverstanden.",
-      "CHANGES_TITLE": "7. Änderung der Datenschutzerklärung",
-      "CHANGES_TEXT": "Ich behalte mir das Recht vor, diese Datenschutzerklärung bei Änderungen der Rechtslage oder der Datenverarbeitung entsprechend anzupassen."
-    }
-  
-  
+  "PRIVACY": {
+    "HEADER": "Datenschutzerklärung",
+    "RESPONSIBLE_TITLE": "1. Verantwortliche Stelle",
+    "NAME": "Mehmet Deliaci",
+    "ADDRESS": "Nördliche Ringstr.23",
+    "CITY": "91781 Weißenburg",
+    "COUNTRY": "Deutschland",
+    "EMAIL": "E-Mail",
+    "DATA_COLLECTION_TITLE": "2. Erhebung und Speicherung personenbezogener Daten",
+    "DATA_COLLECTION_TEXT": "Wenn Sie über das Kontaktformular eine Nachricht an mich senden, werden die folgenden Daten verarbeitet:",
+    "DATA_NAME": "Ihr Name",
+    "DATA_EMAIL": "Ihre E-Mail-Adresse",
+    "DATA_MESSAGE": "Ihre Nachricht",
+    "DATA_USAGE_TEXT": "Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Eine Weitergabe an Dritte erfolgt nicht.",
+    "LEGAL_BASIS_TITLE": "3. Rechtsgrundlage der Verarbeitung",
+    "LEGAL_BASIS_TEXT": "Die Verarbeitung Ihrer Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen).",
+    "STORAGE_DURATION_TITLE": "4. Speicherdauer",
+    "STORAGE_DURATION_TEXT": "Ihre Daten werden so lange gespeichert, wie es für die Bearbeitung Ihrer Anfrage notwendig ist. Nach Abschluss der Anfrage werden Ihre Daten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.",
+    "YOUR_RIGHTS_TITLE": "5. Ihre Rechte",
+    "YOUR_RIGHTS_TEXT": "Sie haben folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:",
+    "RIGHT_ACCESS": "Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)",
+    "RIGHT_CORRECTION": "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+    "RIGHT_DELETION": "Löschung Ihrer Daten (Art. 17 DSGVO)",
+    "RIGHT_LIMITATION": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+    "RIGHT_OBJECTION": "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+    "RIGHT_TRANSFERABILITY": "Übertragbarkeit Ihrer Daten (Art. 20 DSGVO)",
+    "RIGHTS_CONTACT_TEXT": "Zur Ausübung Ihrer Rechte können Sie sich an die oben genannte E-Mail-Adresse wenden.",
+    "CONSENT_TITLE": "6. Einwilligung",
+    "CONSENT_TEXT": "Durch das Absenden einer Nachricht über das Kontaktformular erklären Sie sich mit der Verarbeitung Ihrer Daten gemäß dieser Datenschutzerklärung einverstanden.",
+    "CHANGES_TITLE": "7. Änderung der Datenschutzerklärung",
+    "CHANGES_TEXT": "Ich behalte mir das Recht vor, diese Datenschutzerklärung bei Änderungen der Rechtslage oder der Datenverarbeitung entsprechend anzupassen."
+  }
 }
