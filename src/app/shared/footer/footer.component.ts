@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class FooterComponent {
 
+  year = new Date().getFullYear();
   constructor(private router: Router) {}
 
   navigateAndScroll() {
