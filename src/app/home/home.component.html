@@ -11,12 +11,12 @@
 
     <app-skillset appScrollReveal="right" duration="duration-500"
         [ngClass]="global.themeMode ? 'light-mode' : 'dark-mode'" class="bg-secondary text-white">
-       
+
     </app-skillset>
 
 
     <app-projects appScrollReveal="zoom" [ngClass]="global.themeMode ? 'light-mode' : 'dark-mode'"
-        class="bg-secondary text-white">
+        class="bg-secondary text-white z-[99]">
     </app-projects>
 
 
@@ -28,4 +28,6 @@
     <app-contact appScrollReveal="fade" duration="duration-300"
         [ngClass]="global.themeMode ? 'light-mode' : 'dark-mode'" id="contact" class="bg-secondary text-white">
     </app-contact>
+
+    <div *ngIf="global.isModalOpen" class="fixed inset-0 z-[98] bg-black/70" (click)="closeModal()"></div>
 </div>

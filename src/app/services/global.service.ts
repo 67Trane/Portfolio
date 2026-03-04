@@ -7,6 +7,7 @@ export class GlobalService {
   public themeMode: boolean = false;
   public burgermenuIsOpen: boolean = false;
   public languageDe:boolean = false;
+  public isModalOpen: boolean = false;
 
   constructor() { }
 }

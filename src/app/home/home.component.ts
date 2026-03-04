@@ -10,7 +10,7 @@ import { ProjectsComponent } from '../projects/projects.component';
 import { TestimonialComponent } from '../testimonial/testimonial.component';
 import { ContactComponent } from '../contact/contact.component';
 import { GlobalService } from '../services/global.service';
-import {ScrollRevealDirective } from '../shared/directives/scroll-reveal.directive'
+import { ScrollRevealDirective } from '../shared/directives/scroll-reveal.directive'
 
 
 
@@ -26,6 +26,8 @@ export class HomeComponent {
   mouseX: number = 0;
   mouseY: number = 0;
   currentLang = 'en'; // Standard-Sprache
+  isModalOpen: boolean = false;
+
 
   constructor(private translate: TranslateService, private router: Router, public global: GlobalService) {
     this.translate.setDefaultLang(this.currentLang);
@@ -43,5 +45,9 @@ export class HomeComponent {
 
   isImpressumRoute(): boolean {
     return this.router.url === '/impressum';
+  }
+
+  closeModal() {
+    this.global.isModalOpen = false;
   }
 }

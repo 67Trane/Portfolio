@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, HostListener } from '@angular/core';
 import { ProjectCardComponent } from "./project-card/project-card.component";
 import { TranslateModule } from '@ngx-translate/core';
+import { GlobalService } from '../services/global.service';
 
 @Component({
   selector: 'app-projects',
@@ -16,6 +17,9 @@ export class ProjectsComponent implements OnInit {
   picIndex: any = 1
   ismobile: boolean = false;
   isOpenPorject: boolean = false;
+
+  constructor(public global: GlobalService) {
+  }
 
 
   // Für den "Live Tester" muss der Projektname exakt der URL-Endung entsprechen.
@@ -77,10 +81,13 @@ export class ProjectsComponent implements OnInit {
 
   openProject() {
     this.isOpenPorject = true
+    this.global.isModalOpen = true
   }
 
   handleModalChange(newState: boolean) {
+    this.global.isModalOpen = newState
     this.isOpenPorject = newState;
+    
+    console.log("Modal state changed:", newState);
   }
-
 }

@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <app-project-card *ngIf="isOpenPorject" [projectIndex]="picIndex" [projects]="projects"
+        <app-project-card *ngIf="global.isModalOpen" [projectIndex]="picIndex" [projects]="projects"
             [isModalOpen]="isOpenPorject" (isModalOpenChange)="handleModalChange($event)"></app-project-card>
     </div>
 
