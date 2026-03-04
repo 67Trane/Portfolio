@@ -1,8 +1,9 @@
-<div (click)="toggleModal()" class="fixed inset-0 z-[98] bg-black/70">
+<div (click)="toggleModal()" class="fixed inset-0 z-[98] bg-black/70 backdrop-blur-sm">
     <section (click)="$event.stopPropagation()"
-        class="fixed flex flex-col top-5 left-5 right-5 bottom-5 rounded-3xl bg-hero bg-cover bg-no-repeat z-50 border-primary border overflow-hidden">
-        
-        <div class="absolute top-0 right-0 flex self-end z-10">
+        class="fixed flex flex-col md:flex-row top-5 left-5 right-5 bottom-5 rounded-3xl bg-hero bg-cover bg-no-repeat z-50 border-primary border overflow-hidden animate-[modalIn_0.25s_ease-out_forwards]">
+
+        <!-- Close Button -->
+        <div class="absolute top-0 right-0 z-10">
             <svg (click)="toggleModal()"
                 class="size-10 m-4 cursor-pointer hover:text-primary hover:scale-150 origin-center transition-transform duration-300"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -10,49 +11,54 @@
             </svg>
         </div>
 
-        <div (click)="nextProject()"
-            class="absolute bottom-2 flex justify-end w-full items-center text-primary gap-4 pr-7 next-project z-10">
-            <span class="text-2xl">Next project</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+        <!-- Next Project -->
+        <div (click)="nextProject()" class="absolute bottom-4 right-6 flex items-center gap-3 z-10 cursor-pointer group
+       bg-black/60 hover:bg-black/80 border border-primary/60 
+       text-white rounded-full px-5 py-2 transition-all duration-300">
+            <span class="text-base">Next project</span>
+            <svg class="transition-transform duration-300 group-hover:translate-x-1 text-primary"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
         </div>
+        <!-- LEFT: Text Content -->
+        <div class="flex flex-col justify-center p-10 md:w-1/2 overflow-y-auto pb-16
+                    [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:transparent
+                    [&::-webkit-scrollbar-thumb]:bg-primary/40 [&::-webkit-scrollbar-thumb]:rounded-full">
 
-        <!-- Image of that project -->
-        <div class="self-center md:order-2 md:w-1/2 px-6 pt-6 pb-2 md:mt-0 mt-8 w-full flex justify-center items-center min-h-0 flex-shrink">
-            <img class="rounded-xl object-contain w-48 md:w-full max-h-48 md:max-h-60" 
-                 src="{{projects[projectIndex].picture}}" alt="">
-        </div>
-
-        <div class="p-6 pt-0 md:w-1/2 overflow-y-auto flex-1 pb-12">
-            <h1 class="text-lg text-primary font-bold md:text-4xl">
+            <h1 class="text-2xl text-primary font-bold md:text-5xl mb-1">
                 {{ (projectIndex + 1) | number:'2.0' }}
             </h1>
+            <h2 class="text-2xl font-bold font-fira md:text-4xl">{{projects[projectIndex].name}}</h2>
+            <h3 class="text-base text-primary font-fira pt-5 pb-3 md:text-2xl">{{ 'PROJECTCARD.TITLE' | translate}}</h3>
+            <p class="pb-5 text-sm md:text-base leading-relaxed">{{projects[projectIndex].description | translate}}</p>
 
-            <h2 class="text-lg font-bold font-fira md:text-4xl">{{projects[projectIndex].name}}</h2>
-            <h3 class="text-lg text-primary font-fira pt-4 pb-4 md:text-4xl">{{ 'PROJECTCARD.TITLE' | translate}}</h3>
-            <p class="pb-4 text-sm md:text-lg">{{projects[projectIndex].description | translate}}</p>
-
-            <div class="flex gap-6 pb-6 text-2xl flex-wrap">
-                <div *ngFor="let tool of matchingIcons" class="flex flex-row gap-4">
-                    <div class="flex justify-center items-center gap-2">
-                        <img class="size-6 filter-primary" src="assets/icons/skillset-icons/{{tool.file}}" alt="">
-                        <span class="text-sm">{{tool.name}}</span>
-                    </div>
+            <div class="flex gap-3 pb-7 flex-wrap">
+                <div *ngFor="let tool of matchingIcons"
+                    class="flex items-center gap-2 bg-white/10 rounded-full px-3 py-1 border border-white/10">
+                    <img class="size-4 filter-primary" src="assets/icons/skillset-icons/{{tool.file}}" alt="">
+                    <span class="text-sm">{{tool.name}}</span>
                 </div>
             </div>
 
-            <div class="flex gap-6 justify-center">
+            <div class="flex gap-4">
                 <button (click)="openGithub()"
-                    class="rounded-full border-white border p-4 flex gap-2 place-items-center overHover hover:text-primary hover:border-primary">Github
-                    <img src="assets/icons/arrow_outward_primary.svg" alt=""></button>
+                    class="rounded-full border-white border px-6 py-3 flex gap-2 items-center overHover hover:text-primary hover:border-primary text-sm">
+                    Github <img src="assets/icons/arrow_outward_primary.svg" alt="">
+                </button>
                 <button (click)="navigateToProject()"
-                    class="rounded-full border-white border p-4 flex gap-2 place-items-center overHover hover:text-primary hover:border-primary">Live
-                    Test <img src="assets/icons/arrow_outward_primary.svg" alt=""></button>
+                    class="rounded-full border-white border px-6 py-3 flex gap-2 items-center overHover hover:text-primary hover:border-primary text-sm">
+                    Live Test <img src="assets/icons/arrow_outward_primary.svg" alt="">
+                </button>
             </div>
         </div>
 
+        <!-- RIGHT: Image -->
+        <div class="md:w-1/2 flex justify-center items-center p-8 md:p-10">
+            <img class="rounded-2xl object-contain w-full max-h-[40vh] shadow-2xl"
+                src="{{projects[projectIndex].picture}}" alt="">
+        </div>
     </section>
 </div>
