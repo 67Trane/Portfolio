@@ -1,5 +1,5 @@
-<div (click)="toggleModal()" class="fixed inset-0 z-[98] bg-black/70 backdrop-blur-sm">
-    <section (click)="$event.stopPropagation()"
+<div id="project-card" (click)="toggleModal()" class="fixed inset-0 z-[98] bg-black/70 backdrop-blur-sm">
+    <section  (click)="$event.stopPropagation()"
         class="fixed flex flex-col md:flex-row top-5 left-5 right-5 bottom-5 rounded-3xl bg-hero bg-cover bg-no-repeat z-50 border-primary border overflow-hidden animate-[modalIn_0.25s_ease-out_forwards]">
 
         <!-- Close Button -->
@@ -14,7 +14,7 @@
         <!-- Next Project -->
         <div (click)="nextProject()" class="absolute bottom-4 right-6 flex items-center gap-3 z-10 cursor-pointer group
        bg-black/60 hover:bg-black/80 border border-primary/60 
-       text-white rounded-full px-5 py-2 transition-all duration-300">
+       text-white rounded-full px-5 py-2 transition-all duration-300 select-none">
             <span class="text-base">Next project</span>
             <svg class="transition-transform duration-300 group-hover:translate-x-1 text-primary"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none"

@@ -49,5 +49,6 @@ export class HomeComponent {
 
   closeModal() {
     this.global.isModalOpen = false;
+    document.body.style.overflow = this.global.isModalOpen ? 'hidden' : '';
   }
 }

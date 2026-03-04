@@ -82,12 +82,12 @@ export class ProjectsComponent implements OnInit {
   openProject() {
     this.isOpenPorject = true
     this.global.isModalOpen = true
+    document.body.style.overflow = this.global.isModalOpen ? 'hidden' : '';
   }
 
   handleModalChange(newState: boolean) {
     this.global.isModalOpen = newState
     this.isOpenPorject = newState;
-    
-    console.log("Modal state changed:", newState);
+    document.body.style.overflow = this.global.isModalOpen ? 'hidden' : '';
   }
 }

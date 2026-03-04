@@ -33,11 +33,13 @@ export class ProjectCardComponent implements OnInit {
 
   toggleModal() {
     this.isModalOpen = !this.isModalOpen;
-    this.isModalOpenChange.emit(this.isModalOpen); // Signal an den Parent
+    this.isModalOpenChange.emit(this.isModalOpen);
+    document.getElementById('project-card')?.scrollIntoView();
   }
 
   ngOnInit(): void {
     this.findMatchingIcons()
+    document.getElementById('project-card')?.scrollIntoView();
   }
 
   findMatchingIcons() {
