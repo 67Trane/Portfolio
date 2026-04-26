@@ -19,51 +19,50 @@
     </div>
 
     <div class="flex justify-between w-full absolute bottom-0 px-5 2xl:w-[1580px] overflow-hidden ">
-        <a href="#contact" class="flex flex-col items-center gap-5 justify-end">
-            <button class="rounded-full border-primary border ">
-                <img class="hover:animate-slidedown p-3 py-5" src="assets/icons/arrow-down.svg" alt="">
+        <a href="#contact" aria-label="Scroll to contact section" class="flex flex-col items-center gap-5 justify-end">
+            <button type="button" aria-label="Scroll down" class="rounded-full border-primary border ">
+                <img class="hover:animate-slidedown p-3 py-5" src="assets/icons/arrow-down.svg" alt="" width="32" height="54">
             </button>
             <div class="bg-primary w-[1px] h-1/2"></div>
         </a>
 
         <div class="flex flex-col items-center gap-4">
-            <a></a>
             <a href="mailto:info@mehmet-deliaci.net?subject=Anfrage&body=Hallo Mehmet,"
                 class="hidden md:flex -rotate-90 h-fit  items-center overflow-visible mb-3 mt-44 w-10 hover:text-primary">info&#64;mehmet-deliaci.net</a>
-            <a href="mailto:info@mehmet-deliaci.net?subject=Anfrage&body=Hallo Mehmet,"
-                class="md:hidden"><img src="assets/icons/mail.svg" alt=""></a>
+            <a href="mailto:info@mehmet-deliaci.net?subject=Anfrage&body=Hallo Mehmet," aria-label="Send email to info@mehmet-deliaci.net"
+                class="md:hidden"><img src="assets/icons/mail.svg" alt="" width="32" height="32"></a>
             <div class="relative group w-8 h-8 img-with-dot">
-                <a href="https://github.com/67Trane" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/67Trane" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                     <img class="absolute inset-0 w-full h-full group-hover:hidden cursor-pointer"
-                        src="assets/icons/github.svg" alt="GitHub">
+                        src="assets/icons/github.svg" alt="" width="32" height="32">
                     <img class="absolute inset-0 w-full h-full hidden group-hover:block cursor-pointer"
-                        src="assets/icons/github_white.svg" alt="GitHub">
+                        src="assets/icons/github_white.svg" alt="" width="32" height="32">
                 </a>
             </div>
 
             <div class="relative group w-8 h-8 img-with-dot">
-                <a href="https://linkedin.com/in/https://www.linkedin.com/in/mehmet-deliaci-24285535a/" target="_blank"
-                    rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/mehmet-deliaci-24285535a/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn profile">
                     <img class="absolute inset-0 w-full h-full group-hover:hidden cursor-pointer"
-                        src="assets/icons/linkedin.svg" alt="LinkedIn">
+                        src="assets/icons/linkedin.svg" alt="" width="32" height="32">
                     <img class="absolute inset-0 w-full h-full hidden group-hover:block cursor-pointer"
-                        src="assets/icons/linkedin_white.svg" alt="LinkedIn">
+                        src="assets/icons/linkedin_white.svg" alt="" width="32" height="32">
                 </a>
             </div>
             <div class="bg-white w-[1px] h-28"></div>
         </div>
 
-        <div
-            class="overflow-hidden absolute w-[150%] -mx-2 flex gap-5 bg-gray-300 bg-opacity-10 py-3 bottom-10 text-primary overflow-x-hidden whitespace-nowrap left-0 -rotate-3 backdrop-blur-sm">
+        <ul aria-hidden="true"
+            class="overflow-hidden absolute w-[150%] -mx-2 flex gap-5 bg-gray-300 bg-opacity-10 py-3 bottom-10 text-primary overflow-x-hidden whitespace-nowrap left-0 -rotate-3 backdrop-blur-sm list-none pl-0 m-0">
 
-            <div *ngFor="let _ of loop;" class="animate-marquee flex gap-5">
-                <li>{{ 'MARQUEE.REMOTE_WORK' | translate }}</li>
-                <li>{{ 'MARQUEE.FRONTEND_DEVELOPER' | translate }}</li>
-                <li>{{ 'MARQUEE.BASED_IN' | translate }}</li>
-                <li>{{ 'MARQUEE.REMOTE_WORK' | translate }}</li>
-                <li>{{ 'MARQUEE.FRONTEND_DEVELOPER' | translate }}</li>
-                <li>{{ 'MARQUEE.BASED_IN' | translate }}</li>
-            </div>
-        </div>
+            <li *ngFor="let _ of loop;" class="animate-marquee flex gap-5">
+                <span>{{ 'MARQUEE.REMOTE_WORK' | translate }}</span>
+                <span>{{ 'MARQUEE.FRONTEND_DEVELOPER' | translate }}</span>
+                <span>{{ 'MARQUEE.BASED_IN' | translate }}</span>
+                <span>{{ 'MARQUEE.REMOTE_WORK' | translate }}</span>
+                <span>{{ 'MARQUEE.FRONTEND_DEVELOPER' | translate }}</span>
+                <span>{{ 'MARQUEE.BASED_IN' | translate }}</span>
+            </li>
+        </ul>
     </div>
 </section>

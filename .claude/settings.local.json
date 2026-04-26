@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd up.bat)",
+      "Bash(git config *)"
+    ]
+  }
+}
